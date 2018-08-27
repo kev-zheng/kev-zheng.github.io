@@ -1,0 +1,62 @@
+---
+layout: default
+
+tech-icon: far fa-edit
+photo-icon: fas fa-camera
+---
+
+<div class="home">
+  {%- if page.title -%}
+    <h1 class="page-heading">{{ page.title }}</h1>
+  {%- endif -%}
+
+    <div class="grid-header">
+      <button class="filter-button" onClick="filter('tech')"> <i class="{{ layout.tech-icon }}"></i> Tech</button>
+      <button class="filter-button" onClick="filter('photo')"> <i class="{{ layout.photo-icon }}"></i> Photography</button>
+      <button class="filter-button" onClick="filter('')">Show All</button>
+    </div>
+
+    <div class="grid">
+      {%- if site.posts.size > 0 -%}
+        {%- for post in site.posts -%}
+          <div class="item" data-category="{{post.category}}">
+            <div class="item-content">
+              <div class="post-meta">
+                  <a class="post-link" href="{{ post.url | relative_url }}">
+                    {%- if post.category == 'tech' -%}  
+                      <i class="{{ layout.tech-icon }}"></i>
+                    {%- elsif post.category == 'photo' -%}  
+                      <i class="{{ layout.photo-icon }}"></i>
+                    {%- endif -%}
+    
+                    &nbsp;
+                    
+                    {{ post.title | newline_to_br }}
+                  </a>
+
+                  {{ post.date | date_to_long_string}}
+              </div>
+
+              <div class="post-description">
+                  {{ post.description }}
+              </div>
+            </div>
+          </div>
+        {%- endfor -%}
+      {%- endif -%}
+    </div>
+
+</div>
+
+<script type="text/javascript">
+  var grid = new Muuri('.grid', {dragEnabled: true, layout: {fillGaps: true}});
+
+  function filter(category) {
+    grid.filter(function (item) {
+      var element = item.getElement();
+      var isFilterMatch = !category ? true : (element.getAttribute('data-category').includes(category));
+      return isFilterMatch;
+    });
+  }
+
+</script>

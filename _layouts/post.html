@@ -1,0 +1,14 @@
+---
+layout: default
+---
+
+<div class="post">
+
+    <h2>{{ page.title | escape }}</h1>
+
+        
+        {{ content }} 
+        
+        {%- if site.disqus.shortname -%} {%- include disqus_comments.html -%} {%- endif -%} 
+        
+</div>
