@@ -240,10 +240,6 @@ a.post-link {
   display: inline-block;
   position: relative; }
 
-a:visited {
-  text-decoration: none;
-  color: #58AFD7; }
-
 .post {
   margin-left: auto;
   margin-right: auto;
