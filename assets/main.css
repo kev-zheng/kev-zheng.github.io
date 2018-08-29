@@ -11,7 +11,7 @@ dl, dd, ol, ul, figure {
  * Basic styling
  */
 body {
-  font: 400 16px/1.5 "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font: 400 16px/1.5 PT Serif, Garamond, Freight Text;
   color: #111;
   background-color: #fdfdfd;
   -webkit-text-size-adjust: 100%;
@@ -70,7 +70,12 @@ li > ol {
  * Headings
  */
 h1, h2, h3, h4, h5, h6 {
-  font-weight: 400; }
+  font-weight: 400;
+  font-family: Source Sans Pro, Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; }
+
+p, blockquote, pre,
+ul, ol, dl, figure {
+  font-family: PT Serif, Garamond, Freight Text; }
 
 /**
  * Links
@@ -242,10 +247,17 @@ a:visited {
 .post {
   margin-left: auto;
   margin-right: auto;
-  width: calc(1200px * .5); }
+  width: calc(1200px * .5);
+  font-size: 1.25em; }
+
+.photo-row {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%; }
 
 .photo-container {
-  position: relative; }
+  width: 60%; }
 
 .photo-container .photo-overlay {
   display: none; }
@@ -260,16 +272,23 @@ a:visited {
   /* Black background with 0.5 opacity */
   color: lightgrey;
   /* Grey text */
-  width: 100%;
+  width: 60%;
   /* Full width */
   margin-bottom: 0;
-  font: Open Sans;
+  font-family: "Open Sans";
   font-size: 12px; }
 
 .photo-container .photo-overlay p {
   margin-bottom: 5px;
   margin-left: 5px;
   margin-top: 5px; }
+
+.photo-caption {
+  margin-left: 5%;
+  max-width: 35%;
+  word-wrap: break-word;
+  font-size: 1.5em;
+  font-family: PT Serif; }
 
 /**
  * Site header
