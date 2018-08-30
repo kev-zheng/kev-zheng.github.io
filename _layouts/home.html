@@ -5,41 +5,41 @@ tech-icon: far fa-edit
 photo-icon: fas fa-camera
 ---
 
-<div class="home">
-  {%- if page.title -%}
-    <h1 class="page-heading">{{ page.title }}</h1>
-  {%- endif -%}
+<div class="container">
 
-    <div class="grid-header">
-      <button class="filter-button" onClick="filter('tech')"> <i class="{{ layout.tech-icon }}"></i> Tech</button>
-      <button class="filter-button" onClick="filter('photo')"> <i class="{{ layout.photo-icon }}"></i> Photography</button>
-      <button class="filter-button" onClick="filter('')">Show All</button>
+    <div class="bio row">
+      <div class="profile-container three columns">
+          <img class="profile-picture" src="/photos/profile.jpg" alt="image"/>
+      </div>
+      <div class="seven columns description">
+          <h1>Hey! I'm Kevin 👋</h1>
+
+          <p>I am a third year undergraduate at the University of Michigan studying Computer Science. I have interests in education, machine learning, systems, and productivity.</p>
+
+          <p>Currently, I am working with Correlation One on Datathons, as well as the University of Michigan Academic Innovation on GradeCraft. </p>
+
+          <p>Last summer, I worked at Amazon Tax Systems, developing a service to handle validation of encrypted tax registrations in Java.</p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="nine columns offset-by-three grid-header">      
+        <button class="filter-button" onClick="filter('tech')"> <i class="{{ layout.tech-icon }}"></i> Tech</button>
+        <button class="filter-button" onClick="filter('photo')"> <i class="{{ layout.photo-icon }}"></i> Photography</button>
+        <button class="filter-button" onClick="filter('')">Show All</button>
+      </div>
     </div>
 
     <div class="grid">
       {%- if site.posts.size > 0 -%}
         {%- for post in site.posts -%}
-          <div class="item" data-category="{{post.category}}">
-            <div class="item-content">
-              <div class="post-meta">
-                  <a class="post-link" href="{{ post.url | relative_url }}">
-                    {%- if post.category == 'tech' -%}  
-                      <i class="{{ layout.tech-icon }}"></i>
-                    {%- elsif post.category == 'photo' -%}  
-                      <i class="{{ layout.photo-icon }}"></i>
-                    {%- endif -%}
-    
-                    &nbsp;
-                    
-                    {{ post.title | newline_to_br }}
-                  </a>
-
-                  {{ post.date | date_to_long_string}}
-              </div>
-
-              <div class="post-description">
-                  {{ post.description }}
-              </div>
+          <div class="item row" data-category="{{post.category}}">
+            <div class="three columns">
+                <p></p>
+            </div>
+            <div class="nine columns">
+              <a class="no-link-decoration" href="{{ post.url | relative_url }}">{{ post.title | newline_to_br }}</a>
+              <p>{{ post.date | date: "%B %d, %Y"}}</p>  
             </div>
           </div>
         {%- endfor -%}

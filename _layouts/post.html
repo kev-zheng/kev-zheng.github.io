@@ -4,11 +4,14 @@ layout: default
 
 <div class="post">
 
+    <a class="no-link-decoration" href="/">↩</a>
+
     <h2>{{ page.title | escape }}</h1>
 
+    <h5>{{ page.description | escape }}</h5>
         
-        {{ content }} 
-        
-        {%- if site.disqus.shortname -%} {%- include disqus_comments.html -%} {%- endif -%} 
-        
+    {{ content }} 
+                
+    <a class="no-link-decoration" href="/">↩</a>
+
 </div>

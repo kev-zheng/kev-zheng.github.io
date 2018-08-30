@@ -1,8 +1,6 @@
 ---
 layout: photo-post
-title: |
-  Winter Break 2015
-  Australia & New Zealand
+title: "Winter Break 2015: Australia & New Zealand"
 date:   2015-12-01
 category: photo
 folder: winter-2015

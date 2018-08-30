@@ -2,37 +2,42 @@
 layout: default
 ---
 
-<div class="photo-post">
+<div class="container photo-post">
+    
+    <a class="no-link-decoration" href="/">↩</a>
     
     <h2>{{ page.title | escape | newline_to_br }}</h1>
 
-    <div class="photo-column">
 
-        {% assign counter = 0 %}
+    {% assign counter = 0 %}
 
-        {% for image in site.static_files %}
-            {% if image.path contains page.folder %}
-            
-            {% assign counter = counter | plus:1 %}
-            
-            <div class="photo-row">
-                <div class="photo-container">
-                    <img src="{{ site.baseurl }}{{ image.path }}" alt="image"/>
-                    <div class=photo-overlay>
-                        <p>{% exiftag model, {{page.folder}}, {{image.name}} %}
-                           {% exiftag exposure_time.to_s, {{page.folder}}, {{image.name}} %}
-                           {% exiftag f_number.to_f, {{page.folder}}, {{image.name}} %} </p>
-                    </div>
+    {% for image in site.static_files %}
+        {% if image.path contains page.folder %}
+        
+        {% assign counter = counter | plus:1 %}
+
+        <div class="photo-row">
+            <div class="photo-container">
+                <img src="{{ site.baseurl }}{{ image.path }}" alt="image"/>
+                <div class=photo-overlay>
+                    <p>{% exiftag model, {{page.folder}}, {{image.name}} %}
+                        {% exiftag exposure_time.to_s, {{page.folder}}, {{image.name}} %}
+                        {% exiftag f_number.to_f, {{page.folder}}, {{image.name}} %} </p>
                 </div>
-
-                {%- if page.caption and page.caption[image.name] -%}
-                    <span class="photo-caption desktop" >{{ page.caption[image.name] }}</span>
-                {%- elsif page.caption and page.caption[counter] -%}
-                    <span class="photo-caption desktop" >{{ page.caption[counter] }} {{hallo}}</span>
-                {%- endif -%}
             </div>
-            
-            {% endif %}
-        {% endfor %}  
+
+            {%- if page.caption and page.caption[image.name] -%}
+                <span class="photo-caption desktop" >{{ page.caption[image.name] }}</span>
+            {%- elsif page.caption and page.caption[counter] -%}
+                <span class="photo-caption desktop" >{{ page.caption[counter] }} {{hallo}}</span>
+            {%- endif -%}
+        </div>
+        
+        {% endif %}
+    {% endfor %}  
+
     </div>
+
+    <a class="no-link-decoration" href="/">↩</a>
+
 </div>

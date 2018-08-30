@@ -1,19 +1,15 @@
 ---
 layout: post
-title: |
-    A More Productive OSX:
-    Hammerspoon
+title: "A More Productive OSX"
 date:   2018-01-21
 category: tech
 title-img: hammerspoon.png
-description: An overview of how I use Hammerspoon and Karabiner-Elements to boost my productivity
+description: Hammerspoon and Karabiner-Elements are all you need for a frictionless OSX experience
 ---
-
-##### Hammerspoon and Karabiner-Elements are all you need for a frictionless OSX experience
 
 A couple months ago, I got my mac fixed (hard drive gave up on me!) by the wonderful [Apples and Oranges](www.applesandoranges.net/) and it was good as new. For some reason, I was compelled to look up "how to use mac" as if there was a proper way to use it. Maybe I was just scared it would break again. I ended up learning a lot about how others use the system in more productive ways. 
 
-There are actually a lot of really cool (also not free :( ) apps like [Things](https://culturedcode.com/things/), [Omnifocus](https://www.omnigroup.com/omnifocus/), [Fantastical](https://flexibits.com/fantastical). Out of all of the apps that I tried, here were only two that I still use regularly: __Hammerspoon__ and __Karabiner-Elements__.
+There are actually a lot of really cool (also not free 😞 ) apps like [Things](https://culturedcode.com/things/), [Omnifocus](https://www.omnigroup.com/omnifocus/), [Fantastical](https://flexibits.com/fantastical). Out of all of the apps that I tried, here were only two that I still use regularly: __Hammerspoon__ and __Karabiner-Elements__.
 
 [**Hammerspoon**](http://www.hammerspoon.org/) is a wrapper around OSX, allowing you to easily interact with the OS via scripting, such as trigger notifications, move and resize windows, open applications, etc.
 
