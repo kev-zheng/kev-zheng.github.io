@@ -1,0 +1,177 @@
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+img {
+  width: 100%;
+}
+
+.no-link-decoration {
+  color: 	#36454f;
+}
+
+.no-link-decoration:visited {
+  color: 	#36454f;
+}
+
+.profile-picture {
+    width: 100%;
+    margin: 2.5rem auto 0;
+    border-radius: 50%;
+}
+
+.profile-container {
+    margin-top: 65px;
+}
+
+.bio {
+    margin: 25px 0 0 25px;
+    width: 100%;
+    word-wrap: break-word;
+    font-size: 1em;
+    font-family: PT Serif;
+}
+ 
+.bio h1 {
+    font-size: 2em;
+}
+
+.bio p {
+    font-size: 1em;
+}
+
+.bio .description {
+    padding-top: 25px;
+}
+
+.grid-header {
+  padding-left: 10%;
+}
+
+.grid {
+  position: relative;
+  width: 100%;
+}
+
+.item {
+  display: block;
+  position: absolute;
+  width: 100%;
+  padding-left: 25px;
+  z-index: 1;
+  background-color: transparent;
+}
+
+.item a {
+    font-size: 1.5em;
+}
+
+.item p {
+    font-size: 0.8em;
+}
+
+  .item.muuri-item-dragging {
+    z-index: 3;
+  }
+  .item.muuri-item-releasing {
+    z-index: 2;
+  }
+  .item.muuri-item-hidden {
+    z-index: 0;
+  }
+
+  .post-meta {
+    float:left;
+    width: 400px;
+  }
+  
+  .post-description {
+    float:left;
+    width: 400px;
+  }
+  
+  .filter-button {
+    display:inline-block;
+    position: relative;
+  }
+  
+  .post {
+    margin: 100px auto 0;
+    max-width: 600px;
+    font-size: 1.25em;
+  }
+  
+  .photo-row {
+      position: relative;
+      display:flex;
+      align-items:center;
+      width: 100%;
+      margin-bottom: 20px;
+  }
+
+  .photo-container {
+    width: 60%;
+  }
+
+  .photo-container .photo-overlay {
+    display: none;
+  }
+  
+  .photo-container:hover .photo-overlay {
+    display: block;
+    position: absolute; /* Position the background text */
+    bottom: 0; /* At the bottom. Use top:0 to append it to the top */
+    background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+    color: lightgrey; /* Grey text */
+    width: 60%; /* Full width */
+    margin-bottom: 0;
+    font-family: "Open Sans";
+    font-size: 12px;
+  }
+  
+  .photo-container .photo-overlay p {
+    margin-bottom: 5px;
+    margin-left: 5px;
+    margin-top: 5px;
+  }
+  
+  .photo-caption {
+    margin-left: 5%;
+    max-width: 35%;
+    word-wrap: break-word;
+    font-size: 1.5em;
+    font-family: PT Serif;
+  }
+  
+  @media screen and (max-width : 906px) {
+    .desktop {
+      visibility:hidden;
+      display: none;
+    }
+  
+    .photo-container {
+      width: 100%;
+    }
+  
+    .photo-container:hover .photo-overlay {
+      width: 100%;
+    }
+  }
+  
+  .profile {
+    display: inline-block;
+    width: 240px;
+    height: 240px;
+  }
+  
+  .bio {
+    display: inline-block;
+  }
+
+  .photo-post {
+    margin-top: 100px;
+  }
