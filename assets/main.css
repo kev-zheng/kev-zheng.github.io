@@ -250,7 +250,8 @@ a.post-link {
   position: relative;
   display: flex;
   align-items: center;
-  width: 100%; }
+  width: 100%;
+  margin-bottom: 20px; }
 
 .photo-container {
   width: 60%; }
@@ -286,6 +287,16 @@ a.post-link {
   font-size: 1.5em;
   font-family: PT Serif; }
 
+@media screen and (max-width: 906px) {
+  .desktop {
+    visibility: hidden;
+    display: none; }
+
+  .photo-container {
+    width: 100%; }
+
+  .photo-container:hover .photo-overlay {
+    width: 100%; } }
 /**
  * Site header
  */
