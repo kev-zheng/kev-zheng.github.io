@@ -23,10 +23,10 @@ __Note: gifs in this article were compressed for display on the site. Actual usa
 
 #### Features
 
-* [position](#position) - Instantly resize windows into halves and thirds, or expand to fullscreen.
-* [focus](#focus) - Shift focus (i.e. click) onto an app, or launch it if it's not open
-* [monitor](#monitor) - Move windows between external monitors, or between [spaces](https://support.apple.com/kb/ph25574?locale=en_US)
-* [gcal](#gcal) - Menu bar to see all of your upcoming Google Calendar events
+* [position](#position) - Instantly resize windows into halves of your screen
+* [focus](#focus) - Shift focus (i.e. click) onto an app, or launch if not open
+* [monitor](#monitor) - Move windows between external monitors or [spaces](https://support.apple.com/kb/ph25574?locale=en_US)
+* [gcal](#gcal) - Menu bar to see all of your upcoming calendar events
 * [timer](#timer) - Pomodoro timer to keep you focused
 
 # position
@@ -47,13 +47,13 @@ Repeated presses of above keys will cycle window to take up half, quarter, and 2
 
 Repeated presses of `hyper + enter` will cycle through resizing similarly.
 
-![Position gif]({{ "/gifs/position.gif" | absolute_url}})
+![Position gif]({{ "/gifs/position.gif" | relative_url}})
 
 # focus
 
 File containing hotkey bindings. Each segment binds a hotkey to a useful application - such as `hyper + c` to launch `Google Chrome`
 
-![Focus gif]({{ "/gifs/focus.gif" | absolute_url}})
+![Focus gif]({{ "/gifs/focus.gif" | relative_url}})
 
 # monitor 
 
@@ -67,19 +67,19 @@ Keybindings used to interact with an external monitor, or between spaces within 
 
 `hyper + shift + l` moves the current application to a space on the right
 
-![Spaces gif]({{ "/gifs/spaces.gif" | absolute_url}})
+![Spaces gif]({{ "/gifs/spaces.gif" | relative_url}})
 
 # gcal
 
 Constructs a menubar. Uses the Google Calendar API to fetch events, colors, timing, etc. to a json file, which are then loaded into the menubar on each refresh.
 
-![Calendar gif]({{ "/photos/hammerspoon-karabiner/calendar.png" | absolute_url}})
+![Calendar gif]({{ "/photos/hammerspoon-karabiner/calendar.png" | relative_url}})
 
 # timer
 
 A simple pomodoro timer! Sets a default time for 25 minutes, with option to pause and cancel.
 
-![Timer gif]({{ "/gifs/timer.gif" | absolute_url}})
+![Timer gif]({{ "/gifs/timer.gif" | relative_url}})
 
 # How to use
 
@@ -87,7 +87,7 @@ A simple pomodoro timer! Sets a default time for 25 minutes, with option to paus
 
 Karabiner\-Elements is a relatively new tool made when OSX Sierra came out. As a result, installing it is a bit of a hassle as it’s still under continuous development. Follow the instructions in the `How to Build` section in the link [above](https://github.com/tekezo/Karabiner-Elements). It requires installing C++ Boost Libraries, XCode Build tools beforehand but should compile into a standalone application, which doesn’t need to be compiled every time you update.
 
-edit: [it can now be downloaded directly as a binary!](https://pqrs.org/osx/karabiner/)
+edit: [it can now be downloaded directly as a package!](https://pqrs.org/osx/karabiner/)
 
 Use Karabiner to make a `hyper` key. I rebinding my `caps lock` key (which I never use) into `ctrl+alt+cmd`. Do this by editing your `karabiner.json` file located in `~/.config/karabiner`. [See my file here that you can copy/paste](https://github.com/kev-zheng/hammerspoon/blob/master/karabiner.json)
 

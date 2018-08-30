@@ -12,7 +12,7 @@
   * Basic styling
   */
  body {
-   font: $base-font-weight #{$base-font-size}/#{$base-line-height} $base-font-family;
+   font: $base-font-weight #{$base-font-size}/#{$base-line-height} $content-font-family;
    color: $text-color;
    background-color: $background-color;
    -webkit-text-size-adjust: 100%;
@@ -38,8 +38,6 @@
    margin-bottom: $spacing-unit / 2;
  }
  
- 
- 
  /**
   * `main` element
   */
@@ -47,7 +45,7 @@
    display: block; /* Default value of `display` of `main` element is 'inline' in IE 11. */
  }
  
- 
+
  
  /**
   * Images
@@ -93,8 +91,13 @@
   */
  h1, h2, h3, h4, h5, h6 {
    font-weight: $base-font-weight;
+   font-family: $header-font-family;
  }
  
+ p, blockquote, pre,
+ ul, ol, dl, figure {
+   font-family: $content-font-family;
+ }
  
  
  /**
@@ -312,20 +315,23 @@ a.post-link {
   position: relative;
 }
 
-a:visited {
-  text-decoration: none;
-  color: #58AFD7;
-}
-
 .post {
   margin-left: auto;
   margin-right: auto;
   width: calc(#{$content-width} * .5);
+  font-size: 1.25em;
+}
+
+.photo-row {
+    position: relative;
+    display:flex;
+    align-items:center;
+    width: 100%;
+    margin-bottom: 20px;
 }
 
 .photo-container {
-  position: relative; 
-  // margin: 0 auto; /* Center it */
+  width: 60%;
 }
 
 .photo-container .photo-overlay {
@@ -338,9 +344,9 @@ a:visited {
   bottom: 0; /* At the bottom. Use top:0 to append it to the top */
   background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
   color: lightgrey; /* Grey text */
-  width: 100%; /* Full width */
+  width: 60%; /* Full width */
   margin-bottom: 0;
-  font: Open Sans;
+  font-family: "Open Sans";
   font-size: 12px;
 }
 
@@ -348,4 +354,27 @@ a:visited {
   margin-bottom: 5px;
   margin-left: 5px;
   margin-top: 5px;
+}
+
+.photo-caption {
+  margin-left: 5%;
+  max-width: 35%;
+  word-wrap: break-word;
+  font-size: 1.5em;
+  font-family: PT Serif;
+}
+
+@media screen and (max-width : 906px) {
+  .desktop {
+    visibility:hidden;
+    display: none;
+  }
+
+  .photo-container {
+    width: 100%;
+  }
+
+  .photo-container:hover .photo-overlay {
+    width: 100%;
+  }
 }
