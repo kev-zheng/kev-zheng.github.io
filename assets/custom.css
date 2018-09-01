@@ -1,3 +1,24 @@
+.profile-column {
+  float:left;
+  padding-top: 40px;
+  width: 25%;
+}
+
+.content-column {
+  float:left;
+  padding-left: 5%;
+  width: 70%;
+}
+
+.content-column a {
+  color: #445e70;
+}
+
+.homepage {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
 a {
   text-decoration: none;
 }
@@ -24,8 +45,9 @@ img {
     border-radius: 50%;
 }
 
-.profile-container {
-    margin-top: 65px;
+.profile-spacer {
+    margin-right: 5%;
+    max-width: 200px;
 }
 
 .bio {
@@ -39,14 +61,6 @@ img {
     padding-top: 25px;
 }
 
-.bio a {
-  color: #445e70;
-}
-
-.grid-header {
-  padding-left: 2%;
-}
-
 .grid {
   position: relative;
   width: 100%;
@@ -56,9 +70,9 @@ img {
   display: block;
   position: absolute;
   width: 100%;
-  padding-left: 25px;
   z-index: 1;
   background-color: transparent;
+
 }
 
 .item a {
@@ -135,7 +149,6 @@ img {
   }
   
   .photo-caption {
-    margin-left: 5%;
     max-width: 35%;
     word-wrap: break-word;
     font-size: 1.5em;
@@ -168,4 +181,33 @@ img {
 
   .photo-post {
     margin-top: 100px;
+  }
+
+  .grid-header h4 {
+    display: inline-block;
+  }
+
+  .custom-select {
+    font-size: 2em;
+    font-family: PT Serif;
+
+
+    display: inline-block;
+    border: 0;
+    padding: 0;
+    background-color: transparent;
+
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    text-indent: 1px;
+    text-overflow: '';
+  }
+
+  select:focus {
+    border: 0;
+    outline: 0;
+  }
+
+  .custom-select select::-ms-expand {
+    display: none;
   }
