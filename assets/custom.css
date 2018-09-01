@@ -33,23 +33,18 @@ img {
     width: 100%;
     word-wrap: break-word;
     font-size: 1em;
-    font-family: PT Serif;
-}
- 
-.bio h1 {
-    font-size: 2em;
-}
-
-.bio p {
-    font-size: 1em;
 }
 
 .bio .description {
     padding-top: 25px;
 }
 
+.bio a {
+  color: #445e70;
+}
+
 .grid-header {
-  padding-left: 10%;
+  padding-left: 2%;
 }
 
 .grid {
@@ -100,7 +95,7 @@ img {
   }
   
   .post {
-    margin: 100px auto 0;
+    margin: 100px auto 100px;
     max-width: 600px;
     font-size: 1.25em;
   }
@@ -128,8 +123,7 @@ img {
     background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
     color: lightgrey; /* Grey text */
     width: 60%; /* Full width */
-    margin-bottom: 0;
-    font-family: "Open Sans";
+    margin-bottom: 5px;
     font-size: 12px;
   }
   
@@ -137,6 +131,7 @@ img {
     margin-bottom: 5px;
     margin-left: 5px;
     margin-top: 5px;
+    font-family: Montserrat;
   }
   
   .photo-caption {
@@ -144,7 +139,6 @@ img {
     max-width: 35%;
     word-wrap: break-word;
     font-size: 1.5em;
-    font-family: PT Serif;
   }
   
   @media screen and (max-width : 906px) {

@@ -45,6 +45,17 @@ collections:
 # Set as the root directory
 exif-source: photos
 
+lens-mapping:
+  EF-S17-55mm f/2.8 IS USM: Canon 17-55mm f/2.8
+  11-16mm: Tokina 11-16mm
+  iPhone 6s back camera 4.15mm f/2.2: ""
+  EF70-200mm f/4L USM: Canon 70-200mm f/4L USM
+  EF50mm f/1.8 STM: Canon 50mm f/1.8
+
+camera-mapping:
+  Canon EOS 7D Mark II: Canon 7D Mk II
+  DMC-LX100: Panasonic Lumix LX-100
+
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.

@@ -7,8 +7,9 @@ layout: default
     <a class="no-link-decoration" href="/">↩</a>
     
     <h2>{{ page.title | escape | newline_to_br }}</h1>
-
-
+    
+    <h5>{{ page.description | escape }}</h5>
+        
     {% assign counter = 0 %}
 
     {% for image in site.static_files %}
@@ -20,24 +21,41 @@ layout: default
             <div class="photo-container">
                 <img src="{{ site.baseurl }}{{ image.path }}" alt="image"/>
                 <div class=photo-overlay>
-                    <p>{% exiftag model, {{page.folder}}, {{image.name}} %}
-                        {% exiftag exposure_time.to_s, {{page.folder}}, {{image.name}} %}
-                        {% exiftag f_number.to_f, {{page.folder}}, {{image.name}} %} </p>
+                    {% capture lens-model %}{% exiftag lens_model, {{page.folder}}, {{image.name}} %}{% endcapture %}
+                    {% capture camera-model %}{% exiftag model, {{page.folder}}, {{image.name}} %}{% endcapture %}
+                    {% capture f-stop %}{% exiftag f_number.to_f, {{page.folder}}, {{image.name}} %}{% endcapture %}
+                    {% capture focal-length %}{% exiftag focal_length, {{page.folder}}, {{image.name}} %}{% endcapture %}
+
+                    {% if site.lens-mapping[lens-model] %}
+                        {% assign lens-model = site.lens-mapping[lens-model] %}
+                    {% endif %}
+
+                    {% if site.camera-mapping[camera-model] %}
+                        {% assign camera-model = site.camera-mapping[camera-model] %}
+                    {% endif %}
+
+                    <p>{% assign focal-length = focal-length | split: "/" %}</p>
+                    
+                    <p> {{camera-model}} |
+                        {% if lens-model != ""%} 
+                            {{lens-model}} |
+                        {% endif %}
+                        f{{f-stop}} @ {{ focal-length.first }}mm </p>
                 </div>
             </div>
 
-            {%- if page.caption and page.caption[image.name] -%}
+            {% if page.caption and page.caption[image.name] %}
                 <span class="photo-caption desktop" >{{ page.caption[image.name] }}</span>
-            {%- elsif page.caption and page.caption[counter] -%}
-                <span class="photo-caption desktop" >{{ page.caption[counter] }} {{hallo}}</span>
-            {%- endif -%}
+            {% elsif page.caption and page.caption[counter] %}
+                <span class="photo-caption desktop" >{{ page.caption[counter] }}</span>
+            {% endif %}
         </div>
         
         {% endif %}
     {% endfor %}  
 
-    </div>
-
     <a class="no-link-decoration" href="/">↩</a>
 
+
+    </div>
 </div>

@@ -11,22 +11,22 @@ photo-icon: fas fa-camera
       <div class="profile-container three columns">
           <img class="profile-picture" src="/photos/profile.jpg" alt="image"/>
       </div>
-      <div class="seven columns description">
-          <h1>Hey! I'm Kevin 👋</h1>
+      <div class="eight columns description">
+          <h4>Hey! I'm Kevin 👋</h4>
 
-          <p>I am a third year undergraduate at the University of Michigan studying Computer Science. I have interests in education, machine learning, systems, and productivity.</p>
+          <p>I am a third year undergraduate at the University of Michigan studying Computer Science. I am interested in education, productivity, building systems, and using data to solve problems.</p>
 
-          <p>Currently, I am working with Correlation One on Datathons, as well as with the University of Michigan Academic Innovation on GradeCraft. </p>
+          <p>Currently, I am working with <a href="https://www.correlation-one.com/">Correlation One</a> on Datathons, as well as with University of Michigan Academic Innovation on <a href="https://www.gradecraft.com/">GradeCraft</a>. </p>
 
-          <p>Last summer, I worked at Amazon Tax Systems, developing a service to handle validation of encrypted tax registrations in Java.</p>
+          <p>I am a project manager at <a href="https://www.meccconsulting.com/">MECC Consulting Group</a>, a student run pro-bono consulting club at Michigan. Previous clients that I have worked with include the University of Michigan Health System, Supported Intelligence, Academic Innovation, and Correlation One.</p>
+
+          <p>Last summer, I worked at Amazon Tax Systems, using Java to develop a service to handle validation of encrypted tax registrations. The summer before, I studied abroad at Shanghai Jiao Tong University.</p>
       </div>
     </div>
 
     <div class="row">
       <div class="nine columns offset-by-three grid-header">      
-        <button class="filter-button" onClick="filter('tech')"> <i class="{{ layout.tech-icon }}"></i> Tech</button>
-        <button class="filter-button" onClick="filter('photo')"> <i class="{{ layout.photo-icon }}"></i> Photography</button>
-        <button class="filter-button" onClick="filter('')">Show All</button>
+        <h4>Latest posts</h4>
       </div>
     </div>
 
@@ -39,7 +39,7 @@ photo-icon: fas fa-camera
             </div>
             <div class="nine columns">
               <a class="no-link-decoration" href="{{ post.url | relative_url }}">{{ post.title | newline_to_br }}</a>
-              <p>{{ post.date | date: "%B %d, %Y"}}</p>  
+              <p>{{ post.date | date: "%B %d, %Y"}}</p>
             </div>
           </div>
         {%- endfor -%}
