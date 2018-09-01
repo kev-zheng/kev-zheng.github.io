@@ -35,21 +35,17 @@ img {
     font-size: 1em;
     font-family: PT Serif;
 }
- 
-.bio h1 {
-    font-size: 2em;
-}
-
-.bio p {
-    font-size: 1em;
-}
 
 .bio .description {
     padding-top: 25px;
 }
 
+.bio a {
+  color: #445e70;
+}
+
 .grid-header {
-  padding-left: 10%;
+  padding-left: 2%;
 }
 
 .grid {
