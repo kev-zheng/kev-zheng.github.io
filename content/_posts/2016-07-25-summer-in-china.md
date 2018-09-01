@@ -1,6 +1,6 @@
 ---
 layout: photo-post
-title: "Summer 2016: China"
+title: "Summer 2016: China 🇨🇳"
 date:   2016-07-25
 category: photo
 folder: china-2016
@@ -30,4 +30,6 @@ caption:
   15: Koi at the Stone Forest
 
   16: Taking advantage of the high-speed capabilities of the 7D to capture this
+
+description: Photos from a trip to Yunnan Province, China with the Zhang family
 ---

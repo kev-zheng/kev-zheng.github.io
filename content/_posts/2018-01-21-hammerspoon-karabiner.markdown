@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "A More Productive OSX"
+title: "A More Productive OSX 🍏"
 date:   2018-01-21
-category: tech
+category: project
 title-img: hammerspoon.png
 description: Hammerspoon and Karabiner-Elements are all you need for a frictionless OSX experience
 ---
