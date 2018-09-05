@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-09-01T18:44:59-04:00</updated><id>http://localhost:4000/</id><title type="html">Kevin Zheng</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><author><name>Kevin Zheng</name></author><entry><title type="html">A More Productive OSX 🍏</title><link href="http://localhost:4000/content/project/2018/01/21/hammerspoon-karabiner.html" rel="alternate" type="text/html" title="A More Productive OSX 🍏" /><published>2018-01-21T00:00:00-05:00</published><updated>2018-01-21T00:00:00-05:00</updated><id>http://localhost:4000/content/project/2018/01/21/hammerspoon-karabiner</id><content type="html" xml:base="http://localhost:4000/content/project/2018/01/21/hammerspoon-karabiner.html">&lt;p&gt;&lt;a href=&quot;http://www.hammerspoon.org/&quot;&gt;&lt;strong&gt;Hammerspoon&lt;/strong&gt;&lt;/a&gt; is an incredibly powerful wrapper around OSX, allowing you to easily interact with the OS via scripting, such as trigger notifications, move and resize windows, open applications, etc.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-09-04T23:10:25-04:00</updated><id>http://localhost:4000/</id><title type="html">Kevin Zheng</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><author><name>Kevin Zheng</name></author><entry><title type="html">A More Productive OSX 🍏</title><link href="http://localhost:4000/content/project/2018/01/21/hammerspoon-karabiner.html" rel="alternate" type="text/html" title="A More Productive OSX 🍏" /><published>2018-01-21T00:00:00-05:00</published><updated>2018-01-21T00:00:00-05:00</updated><id>http://localhost:4000/content/project/2018/01/21/hammerspoon-karabiner</id><content type="html" xml:base="http://localhost:4000/content/project/2018/01/21/hammerspoon-karabiner.html">&lt;p&gt;&lt;a href=&quot;http://www.hammerspoon.org/&quot;&gt;&lt;strong&gt;Hammerspoon&lt;/strong&gt;&lt;/a&gt; is an incredibly powerful wrapper around OSX, allowing you to easily interact with the OS via scripting, such as trigger notifications, move and resize windows, open applications, etc.&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;https://github.com/tekezo/Karabiner-Elements&quot;&gt;&lt;strong&gt;Karabiner-Elements&lt;/strong&gt;&lt;/a&gt; is a keyboard customization tool. I use this to remap keys to make it simple to trigger my Hammerspoon scripts from the keyboard.&lt;/p&gt;
 
@@ -46,7 +46,7 @@
 
 &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;hyper + shift + right&lt;/code&gt; cycles the current application to monitor on the right&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;hyper + shift + keft&lt;/code&gt; cycles the current application to monitor on the left&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;hyper + shift + left&lt;/code&gt; cycles the current application to monitor on the left&lt;/p&gt;
 
 &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;hyper + shift + h&lt;/code&gt; moves the current application to a space on the left&lt;/p&gt;
 
@@ -110,4 +110,154 @@
 
 &lt;p&gt;Hammerspoon has a great community that have built a ton of other &lt;a href=&quot;https://github.com/Hammerspoon/Spoons&quot;&gt;spoons&lt;/a&gt; and &lt;a href=&quot;https://github.com/Hammerspoon/hammerspoon/wiki/Sample-Configurations&quot;&gt;sample configurations&lt;/a&gt;. For instance, I borrowed the fantastic &lt;a href=&quot;https://github.com/miromannino/miro-windows-manager&quot;&gt;resizing hotkey&lt;/a&gt; functionality from another user.&lt;/p&gt;
 
-&lt;h5 id=&quot;thanks-for-reading-check-out-the-repository-for-my-configuration&quot;&gt;Thanks for reading! Check out the &lt;a href=&quot;https://github.com/kev-zheng/hammerspoon/&quot;&gt;repository&lt;/a&gt; for my configuration.&lt;/h5&gt;</content><author><name>Kevin Zheng</name></author><category term="project" /><summary type="html">Hammerspoon is an incredibly powerful wrapper around OSX, allowing you to easily interact with the OS via scripting, such as trigger notifications, move and resize windows, open applications, etc.</summary></entry><entry><title type="html">Summer 2016: Japan 🇯🇵</title><link href="http://localhost:4000/content/photo/2016/08/20/summer-in-japan.html" rel="alternate" type="text/html" title="Summer 2016: Japan 🇯🇵" /><published>2016-08-20T00:00:00-04:00</published><updated>2016-08-20T00:00:00-04:00</updated><id>http://localhost:4000/content/photo/2016/08/20/summer-in-japan</id><content type="html" xml:base="http://localhost:4000/content/photo/2016/08/20/summer-in-japan.html"></content><author><name>Kevin Zheng</name></author><category term="photo" /><summary type="html"></summary></entry><entry><title type="html">Summer 2016: China 🇨🇳</title><link href="http://localhost:4000/content/photo/2016/07/25/summer-in-china.html" rel="alternate" type="text/html" title="Summer 2016: China 🇨🇳" /><published>2016-07-25T00:00:00-04:00</published><updated>2016-07-25T00:00:00-04:00</updated><id>http://localhost:4000/content/photo/2016/07/25/summer-in-china</id><content type="html" xml:base="http://localhost:4000/content/photo/2016/07/25/summer-in-china.html"></content><author><name>Kevin Zheng</name></author><category term="photo" /><summary type="html"></summary></entry><entry><title type="html">Winter Break 2015: Australia 🇦🇺 &amp;amp; New Zealand 🇳🇿</title><link href="http://localhost:4000/content/photo/2016/01/26/winter-in-australia.html" rel="alternate" type="text/html" title="Winter Break 2015: Australia 🇦🇺 &amp; New Zealand 🇳🇿" /><published>2016-01-26T00:00:00-05:00</published><updated>2016-01-26T00:00:00-05:00</updated><id>http://localhost:4000/content/photo/2016/01/26/winter-in-australia</id><content type="html" xml:base="http://localhost:4000/content/photo/2016/01/26/winter-in-australia.html"></content><author><name>Kevin Zheng</name></author><category term="photo" /><summary type="html"></summary></entry></feed>
+&lt;h5 id=&quot;thanks-for-reading-check-out-the-repository-for-my-configuration&quot;&gt;Thanks for reading! Check out the &lt;a href=&quot;https://github.com/kev-zheng/hammerspoon/&quot;&gt;repository&lt;/a&gt; for my configuration.&lt;/h5&gt;</content><author><name>Kevin Zheng</name></author><category term="project" /><summary type="html">Hammerspoon is an incredibly powerful wrapper around OSX, allowing you to easily interact with the OS via scripting, such as trigger notifications, move and resize windows, open applications, etc.</summary></entry><entry><title type="html">Texify: Hands-Free EECS 203 Templates</title><link href="http://localhost:4000/content/project/2017/03/21/texify.html" rel="alternate" type="text/html" title="Texify:
+Hands-Free EECS 203 Templates
+" /><published>2017-03-21T00:00:00-04:00</published><updated>2017-03-21T00:00:00-04:00</updated><id>http://localhost:4000/content/project/2017/03/21/texify</id><content type="html" xml:base="http://localhost:4000/content/project/2017/03/21/texify.html">&lt;h4 id=&quot;a-tool-to-help-kick-start-eecs-203-assignments&quot;&gt;A tool to help kick-start EECS 203 assignments.&lt;/h4&gt;
+
+&lt;p&gt;&lt;em&gt;or: documenting the process of developing of one of my very first projects&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;The winter of my freshman year, I took Discrete Mathematics (EECS 203 at Michigan). From a professor’s recommendation, I also started to learn &lt;a href=&quot;https://www.latex-project.org/&quot;&gt;LaTeX&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;If you don’t know, LaTeX is a complicated but powerful document markup language. It’s used as the standard in countless academic papers. Also in tedious homework assignments.&lt;/p&gt;
+
+&lt;p&gt;Below, you can see an example of a typical EECS 203 assignment.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/photos/homework_example_EECS203.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Learning to use LaTeX was &lt;em&gt;hard&lt;/em&gt; - even making the boilerplate takes a decent chunk of time. I wanted to find a way to minimize the busy-work so that I can spend more time on the assignment.&lt;/p&gt;
+
+&lt;p&gt;Here’s an example of bare-bones LaTeX boilerplate&lt;/p&gt;
+
+&lt;div class=&quot;language-latex highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;\documentclass&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;article&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;\usepackage&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;graphicx&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;nt&quot;&gt;\begin{document}&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;\title&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;Introduction to &lt;span class=&quot;k&quot;&gt;\LaTeX&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{}}&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;\author&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;Author's Name&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;\maketitle&lt;/span&gt;
+
+&lt;span class=&quot;nt&quot;&gt;\begin{abstract}&lt;/span&gt;
+The abstract text goes here.
+&lt;span class=&quot;nt&quot;&gt;\end{abstract}&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;\section&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;Introduction&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+Here is the text of your introduction.
+
+&lt;span class=&quot;nt&quot;&gt;\begin{equation}&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;\label&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;simple&lt;span class=&quot;p&quot;&gt;_&lt;/span&gt;equation&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;\alpha&lt;/span&gt; = &lt;span class=&quot;k&quot;&gt;\sqrt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;\beta&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;\end{equation}&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;\subsection&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;Subsection Heading Here&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+Write your subsection text here.
+
+&lt;span class=&quot;nt&quot;&gt;\begin{figure}&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;\centering&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;\includegraphics&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;[width=3.0in]&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;myfigure&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;\caption&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;Simulation Results&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;\label&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;simulationfigure&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;\end{figure}&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;\section&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;Conclusion&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+Write your conclusion here.
+
+&lt;span class=&quot;nt&quot;&gt;\end{document}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Which looks like this:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/photos/latex-example.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;When considering the assignment, the main challenge was to extract the problem features from the .pdf&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/photos/homework_example_marked_EECS203.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;I found a tool online called &lt;a href=&quot;&amp;quot;https://tabula.technology/&amp;quot;&quot;&gt;tabula&lt;/a&gt; that can parse data tables in pdf files, as well as a &lt;a href=&quot;&amp;quot;https://github.com/chezou/tabula-py&amp;quot;&quot;&gt;python wrapper&lt;/a&gt; to convert the table into Pandas. Perfect.&lt;/p&gt;
+
+&lt;p&gt;LaTeX, like most coding languages, is picky. There are two main “environments” - math and text. There are some math symbols that can only be used in math mode. For example, &lt;code class=&quot;highlighter-rouge&quot;&gt;$ do \sum math &lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Since this is only for extraction and display purposes, most symbols can be simply removed:&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;c&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;r&quot;&quot;&quot;.&quot;'^“”/√_&quot;&quot;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;df&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'Problem'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;df&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'Problem'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;str&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;replace&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;''&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Regular expressions and splitting can be used to parse out the pandas rows&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;# Extract numbers and problem&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;df&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'Number'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;df&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'Problem'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;str&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;extract&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'(^&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;\&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;d+&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;\&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;.?&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;\&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;d*)'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;expand&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;False&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;df&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'Parts'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;df&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'Problem'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;str&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;extract&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'^&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;\&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;d+&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;\&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;.?&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;\&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;d*&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;\&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;s*([a-z,]+)'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;expand&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;False&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;c&quot;&gt;# Split 'Parts' by comma into a list&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;df&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'Parts'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;df&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'Parts'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;str&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;split&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;,&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Now, I had all of my material. I just needed a way to write it. I made my own hacky syntax for templating: if the line contained &lt;code class=&quot;highlighter-rouge&quot;&gt;!split&lt;/code&gt;, then write the problem data.&lt;/p&gt;
+
+&lt;p&gt;Note: more advanced templating using engines, which I have not been aware of, such as &lt;a href=&quot;&amp;quot;http://jinja.pocoo.org/2/&amp;quot;&quot;&gt;Jinja2&lt;/a&gt; or &lt;a href=&quot;&amp;quot;https://shopify.github.io/liquid&amp;quot;&quot;&gt;Liquid&lt;/a&gt; could have been used.&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;write_tex&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;df&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;template_path&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;output_dir&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;output_file&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+    &lt;span class=&quot;s&quot;&gt;&quot;&quot;&quot;Write new output file with dataframe and template.txt&quot;&quot;&quot;&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;output&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;open&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;os&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;path&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;join&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;output_dir&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;output_file&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'w'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+    &lt;span class=&quot;c&quot;&gt;# Write output file&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;with&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;open&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;template_path&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'r'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;as&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;template&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;line&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;template&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+            &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;line&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;!split&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\n&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+                &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;df&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;index&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+                    &lt;span class=&quot;n&quot;&gt;output&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;write&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;make_problem&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;df&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Points&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;][&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt;
+                                              &lt;span class=&quot;n&quot;&gt;df&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Section&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;][&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt;
+                                              &lt;span class=&quot;n&quot;&gt;df&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Number&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;][&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt;
+                                              &lt;span class=&quot;n&quot;&gt;df&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Problem&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;][&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt;
+                                              &lt;span class=&quot;n&quot;&gt;df&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Parts&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;][&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]))&lt;/span&gt;
+            &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+                &lt;span class=&quot;n&quot;&gt;output&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;write&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;line&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;output&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;close&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Putting it all together with attractive boilerplate LaTeX, the program spits out&lt;/p&gt;
+
+&lt;div class=&quot;language-latex highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;\begin{document}&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;\title&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; EECS 203: Discrete Mathematics &lt;span class=&quot;k&quot;&gt;\\&lt;/span&gt;
+        Homework [Homework Number] (Winter 2017)&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;\date&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;Due: Now&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;\author&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;[Name]&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;\maketitle&lt;/span&gt;
+
+&lt;span class=&quot;nt&quot;&gt;\begin{questions}&lt;/span&gt;
+
+&lt;span class=&quot;c&quot;&gt;%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;\question&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;[1.0]&lt;/span&gt; Section 9.2 Problem 12 &lt;span class=&quot;k&quot;&gt;\\&lt;/span&gt;
+“What do you obtain when you apply...”
+&lt;span class=&quot;nt&quot;&gt;\begin{solution}&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;\\&lt;/span&gt;
+
+
+
+
+&lt;span class=&quot;nt&quot;&gt;\end{solution}&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%&lt;/span&gt;
+
+.
+.
+. Questions here
+.
+.
+
+&lt;span class=&quot;nt&quot;&gt;\end{questions}&lt;/span&gt;
+
+&lt;span class=&quot;nt&quot;&gt;\end{document}&lt;/span&gt;
+
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;which will look like this&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/photos/texify-output.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+
+&lt;h5 id=&quot;thanks-for-reading-check-out-the-repository-for-the-source&quot;&gt;Thanks for reading! Check out the &lt;a href=&quot;https://github.com/kev-zheng/Texify&quot;&gt;repository&lt;/a&gt; for the source.&lt;/h5&gt;</content><author><name>Kevin Zheng</name></author><category term="project" /><summary type="html">A tool to help kick-start EECS 203 assignments.</summary></entry><entry><title type="html">Summer 2016: Japan 🇯🇵</title><link href="http://localhost:4000/content/photo/2016/08/20/summer-in-japan.html" rel="alternate" type="text/html" title="Summer 2016: Japan 🇯🇵" /><published>2016-08-20T00:00:00-04:00</published><updated>2016-08-20T00:00:00-04:00</updated><id>http://localhost:4000/content/photo/2016/08/20/summer-in-japan</id><content type="html" xml:base="http://localhost:4000/content/photo/2016/08/20/summer-in-japan.html"></content><author><name>Kevin Zheng</name></author><category term="photo" /><summary type="html"></summary></entry><entry><title type="html">Summer 2016: China 🇨🇳</title><link href="http://localhost:4000/content/photo/2016/07/25/summer-in-china.html" rel="alternate" type="text/html" title="Summer 2016: China 🇨🇳" /><published>2016-07-25T00:00:00-04:00</published><updated>2016-07-25T00:00:00-04:00</updated><id>http://localhost:4000/content/photo/2016/07/25/summer-in-china</id><content type="html" xml:base="http://localhost:4000/content/photo/2016/07/25/summer-in-china.html"></content><author><name>Kevin Zheng</name></author><category term="photo" /><summary type="html"></summary></entry><entry><title type="html">Winter Break 2015: Australia 🇦🇺 &amp;amp; New Zealand 🇳🇿</title><link href="http://localhost:4000/content/photo/2016/01/26/winter-in-australia.html" rel="alternate" type="text/html" title="Winter Break 2015: Australia 🇦🇺 &amp; New Zealand 🇳🇿" /><published>2016-01-26T00:00:00-05:00</published><updated>2016-01-26T00:00:00-05:00</updated><id>http://localhost:4000/content/photo/2016/01/26/winter-in-australia</id><content type="html" xml:base="http://localhost:4000/content/photo/2016/01/26/winter-in-australia.html"></content><author><name>Kevin Zheng</name></author><category term="photo" /><summary type="html"></summary></entry></feed>
