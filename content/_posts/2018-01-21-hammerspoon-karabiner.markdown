@@ -53,7 +53,7 @@ Keybindings used to interact with an external monitor, or between spaces within 
 
 `hyper + shift + right` cycles the current application to monitor on the right
 
-`hyper + shift + keft` cycles the current application to monitor on the left
+`hyper + shift + left` cycles the current application to monitor on the left
 
 `hyper + shift + h` moves the current application to a space on the left
 

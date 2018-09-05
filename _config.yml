@@ -25,6 +25,7 @@ twitter_username: jekyllrb
 github_username:  jekyll
 
 author: Kevin Zheng
+highlighter: rouge
 
 # Build settings
 markdown: kramdown

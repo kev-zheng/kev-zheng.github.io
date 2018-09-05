@@ -17,13 +17,13 @@ photo-icon: fas fa-camera
     <div class="description">
         <h4>Hey! I'm Kevin 👋</h4>
 
-        <p>I am a third year undergraduate at the University of Michigan studying Computer Science. I am interested in education, productivity, building systems, and using data to solve problems.</p>
+        <p>I'm a third year undergraduate at the University of Michigan studying Computer Science, interested in education, building systems, using data to solve problems, and maximizing productivity.</p>
 
         <p>Currently, I am working with <a href="https://www.correlation-one.com/">Correlation One</a> on Datathons, as well as with University of Michigan Academic Innovation on <a href="https://www.gradecraft.com/">GradeCraft</a>. </p>
 
         <p>I am a project manager at <a href="https://www.meccconsulting.com/">MECC Consulting Group</a>, a student run pro-bono consulting club at Michigan. Previous clients that I have worked with include the University of Michigan Health System, Supported Intelligence, Academic Innovation, and Correlation One.</p>
 
-        <p>Last summer, I worked at <a href="https://www.amazon.com/">Amazon Tax Systems</a>, using Java to develop a service to handle validation of encrypted tax registrations. The summer before, I studied abroad at Shanghai Jiao Tong University.</p>
+        <p>Last summer, I worked at <a href="https://www.amazon.com/">Amazon</a>'s Tax Service Platform, using Java to develop a service to handle validation of encrypted tax registrations. The summer before, I studied abroad at Shanghai Jiao Tong University.</p>
     
         <p>See my photos taken for the <a href="https://www.michigandaily.com/search/site/%2522Kevin%2520Zheng%252FDaily%2522?page=4">Michigan Daily</a> and SHEI Magazine: <a href="http://www.sheimagazine.com/vol-3-iss-3">Front Page 1</a>, <a href="http://www.sheimagazine.com/shift-vol-3-issue-5">Front Page 2</a>.</p>
     </div>
@@ -31,19 +31,18 @@ photo-icon: fas fa-camera
     <div class="grid-header row">
           <h4>Latest&nbsp</h4>
           <select class="custom-select filter-field">
-            <option value="">posts</option>
-            <option value="photo">pictures</option>
-            <option value="project">projects</option>
+            <option class="select-posts" value="">posts</option>
+            <option class="select-photos" value="photo">pictures</option>
+            <option class="select-projects" value="project">projects</option>
           </select>
       </div>
   
       <div class="row">
-          <div class="profile-spacer columns"><p></p></div>
           <div class="grid">
               {%- if site.posts.size > 0 -%}
               {%- for post in site.posts -%}
                 <div class="item row" data-category="{{post.category}}">
-                    <a class="no-link-decoration" href="{{ post.url | relative_url }}">{{ post.title | newline_to_br }}</a>
+                    <a class="no-link-decoration" href="{{ post.url | relative_url }}">{{ post.title }}</a>
                     <p>{{ post.date | date: "%B %d, %Y"}}</p>
                 </div>
               {%- endfor -%}
