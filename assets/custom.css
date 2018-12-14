@@ -124,6 +124,7 @@ img {
 
   .photo-container {
     width: 100%;
+    /* width:800px; */
   }
 
   .photo-container .photo-overlay {
@@ -181,6 +182,7 @@ img {
   }
 
   .photo-post {
+    width:700px;
     margin-top: 100px;
   }
 

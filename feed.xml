@@ -1,4 +1,102 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-10-29T14:05:42-04:00</updated><id>http://localhost:4000/</id><title type="html">Kevin Zheng</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><author><name>Kevin Zheng</name></author><entry><title type="html">A More Productive OSX 🍏</title><link href="http://localhost:4000/content/project/2018/01/21/hammerspoon-karabiner.html" rel="alternate" type="text/html" title="A More Productive OSX 🍏" /><published>2018-01-21T00:00:00-05:00</published><updated>2018-01-21T00:00:00-05:00</updated><id>http://localhost:4000/content/project/2018/01/21/hammerspoon-karabiner</id><content type="html" xml:base="http://localhost:4000/content/project/2018/01/21/hammerspoon-karabiner.html">&lt;p&gt;I use two tools to massively boost my productivity while working on OSX. This article describes my configuration and how you can customize it to your own needs.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-12-14T15:45:44-05:00</updated><id>http://localhost:4000/</id><title type="html">Kevin Zheng</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><author><name>Kevin Zheng</name></author><entry><title type="html">A Summer at Amazon :)</title><link href="http://localhost:4000/content/post/2018/08/20/summer-in-seattle.html" rel="alternate" type="text/html" title="A Summer at Amazon :)" /><published>2018-08-20T00:00:00-04:00</published><updated>2018-08-20T00:00:00-04:00</updated><id>http://localhost:4000/content/post/2018/08/20/summer-in-seattle</id><content type="html" xml:base="http://localhost:4000/content/post/2018/08/20/summer-in-seattle.html">&lt;p&gt;From May - August 2018, I worked as a Software Development Engineering Intern working on Amazon’s Tax Systems team in Seattle, and I had a great time!&lt;/p&gt;
+
+&lt;p&gt;Actually interning is a very different experience compared to school; it was a really eye-opening experience to witness the operations of a large company.&lt;/p&gt;
+
+&lt;iframe width=&quot;700&quot; height=&quot;400&quot; src=&quot;https://www.youtube.com/embed/XBP_tMc00l8&quot; frameborder=&quot;0&quot; allow=&quot;autoplay; encrypted-media&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+&lt;p style=&quot;text-align:center&quot;&gt;check out my 1 second &lt;s&gt;everyday&lt;/s&gt; every-couple-days of the summer!&lt;/p&gt;
+
+&lt;h4 id=&quot;the-process&quot;&gt;The Process&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Applied online end of October, started process mid-november&lt;/li&gt;
+  &lt;li&gt;Two online assessments, final round phone interview, offer by January&lt;/li&gt;
+  &lt;li&gt;Team selection decision a month before start date&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;the-job&quot;&gt;The Job&lt;/h4&gt;
+
+&lt;p&gt;My project was to develop a service to handle validation of tax registration numbers - for example, numbers that Amazon collects from sellers to collect sales tax. These have have to be well-formed in order for Amazon’s systems to identify and calculate the correct taxes for purchases.&lt;/p&gt;
+
+&lt;p&gt;I was fortunate to have an impactful project to my team! I met with my team many times to go over design decisions, culminating in a comprehensive design document and design review with both my team the Hyderabad team.&lt;/p&gt;
+
+&lt;p&gt;A major part of my project included developing an encrypted blacklist. Similar to credit card numbers, customer tax registrations are critical data and must comply with strict regulations. I worked with several AWS services to handle encryption, validation, and storage of this blacklisted data, and took care to implement caching where useful to minimize database and encryption/decryption calls.&lt;/p&gt;
+
+&lt;p&gt;A typical day: Arrive 10 am, plan day to day tasks. Stand-up around 11 am. Code, lunch, code, with frequent mentorship meetings, leave around 5-7pm depending on pending work.&lt;/p&gt;
+
+&lt;p&gt;I enjoyed the style of work - I had plenty of opportunity to be independent and do my own research. I noticed that Amazon rewards independence - one especially important leadership principle is “Bias for Action” which my manager brought up frequently.&lt;/p&gt;
+
+&lt;p&gt;My mentor was busy but always willing to help, so as I worked, I would rack up a list of items that I was blocked on with my best decision to proceed. Often he would OK them, but many other times we would have to sit down and reconsider the project design&lt;/p&gt;
+
+&lt;h4 id=&quot;what-i-learned&quot;&gt;What I learned&lt;/h4&gt;
+
+&lt;h5 id=&quot;java&quot;&gt;Java&lt;/h5&gt;
+&lt;p&gt;When I came in, I had no prior experience programming in Java. I gained new respect for the language since it’s much simpler to code in than C++ and has a rich community of open source libraries. I picked up design patterns, learned object oriented programming, as well as gained experience with dependency injection and testing/mocking frameworks.&lt;/p&gt;
+
+&lt;h5 id=&quot;devops&quot;&gt;Devops&lt;/h5&gt;
+
+&lt;p&gt;&lt;strong&gt;Internal tools.&lt;/strong&gt; Amazon has a unique build system that handles dependency resolution between thousands of services. Consequently, it’s also massive and slow to use, but I can appreciate how effective it is compared to a Makefile&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Git.&lt;/strong&gt; Using git at work is very different than at school, especially at Amazon. Commits are designed to be a distinct feature, and also short enough to be easily reviewed. By the end, I was well aquainted with developing on multiple branches and using rebase to edit commits&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Agile.&lt;/strong&gt; Development is spread across two-week sprints. At the beginning of each sprint, I identified tasks to focus on and estimated how long each one would took. Unsurprisingly, my estimates were off, and new problems appeared every week, but it is helpful to have a consistent board of tasks to work on day by day.&lt;/p&gt;
+
+&lt;h5 id=&quot;design&quot;&gt;Design&lt;/h5&gt;
+
+&lt;p&gt;&lt;strong&gt;Service oriented architecture.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Teams at Amazon are usually around 10 people, aptly called ‘two pizza teams’. Each team can take ownership of several services, effectively distributing the work.&lt;/p&gt;
+
+&lt;p&gt;I learned a lot in taking ownership of my own service, and was able to understand many design decisions involved in the interaction between services. In a way, it’s similar to how good C++ modules are designed, separating interface (.h) from implementatin (.cpp) while carefully selecting the dependencies between modules.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Security.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;It’s cool to be able to work with real customer data, but this comes with the responsibility of handling it safely. Data has to be encrypted both in transit and at rest, and there are different tools (both internal and external, like AWS KMS) that can be used for both.&lt;/p&gt;
+
+&lt;p&gt;My project had large impact on the security of the overall system. Considering that validation is normally the only function that requires working with plaintext, callers can validate encrypted data and pass it around knowing that it’s safe to use.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Distributed systems.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Amazon operates across the globe. What happens when an American seller is in Europe? Deploying code to multiple hosts distributed across multiple continents presents new challenges, for example:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;consistency (when will I see changes?)&lt;/li&gt;
+  &lt;li&gt;latency (will it matter if I serve European users using a host in the US?)&lt;/li&gt;
+  &lt;li&gt;geographical (is this service that I want to use available in China?)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h5 id=&quot;seattle&quot;&gt;Seattle&lt;/h5&gt;
+
+&lt;p&gt;This is the fun part! I felt that my work was reasonable and balanced, and there was plenty of opportunity to explore Seattle after work and on the weekends.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Housing.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;I was lucky and was able to find a place with a roommate with a ~10 minute walk to work, rent split $1400/mo. Most interns lived in dorms at University of Washington. I think both are good options - living close to work is convenient, but I also would have enjoyed being around more interns by living in corporate housing.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Food.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Lots of great food in Seattle. There are plenty of food trucks outside of the offices for lunch. Some of my favorites:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Pho Bac&lt;/li&gt;
+  &lt;li&gt;Tamari Bar&lt;/li&gt;
+  &lt;li&gt;Lola&lt;/li&gt;
+  &lt;li&gt;Tacos Chukis&lt;/li&gt;
+  &lt;li&gt;Sichuanese Cuisin&lt;/li&gt;
+  &lt;li&gt;One Pot&lt;/li&gt;
+  &lt;li&gt;Tamarind Tree&lt;/li&gt;
+  &lt;li&gt;Kedai Makan&lt;/li&gt;
+  &lt;li&gt;Ba Bar&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Hiking.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Most of these are super touristy but they were still fun!&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Rattlesnake&lt;/li&gt;
+  &lt;li&gt;Mount Si&lt;/li&gt;
+  &lt;li&gt;Poo Poo Point&lt;/li&gt;
+  &lt;li&gt;Chain Lakes&lt;/li&gt;
+&lt;/ul&gt;</content><author><name>Kevin Zheng</name></author><category term="post" /><summary type="html">From May - August 2018, I worked as a Software Development Engineering Intern working on Amazon’s Tax Systems team in Seattle, and I had a great time!</summary></entry><entry><title type="html">A More Productive OSX 🍏</title><link href="http://localhost:4000/content/project/2018/01/21/hammerspoon-karabiner.html" rel="alternate" type="text/html" title="A More Productive OSX 🍏" /><published>2018-01-21T00:00:00-05:00</published><updated>2018-01-21T00:00:00-05:00</updated><id>http://localhost:4000/content/project/2018/01/21/hammerspoon-karabiner</id><content type="html" xml:base="http://localhost:4000/content/project/2018/01/21/hammerspoon-karabiner.html">&lt;p&gt;I use two tools to massively boost my productivity while working on OSX. This article describes my configuration and how you can customize it to your own needs.&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;http://www.hammerspoon.org/&quot;&gt;&lt;strong&gt;Hammerspoon&lt;/strong&gt;&lt;/a&gt; is an incredibly powerful wrapper around OSX, allowing you to easily interact with the OS via scripting, such as trigger notifications, move and resize windows, open applications, etc.&lt;/p&gt;
 
@@ -262,4 +360,4 @@ Write your conclusion here.
 
 &lt;p&gt;&lt;img src=&quot;/photos/texify-output.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
 
-&lt;h5 id=&quot;thanks-for-reading-check-out-the-repository-for-the-source&quot;&gt;Thanks for reading! Check out the &lt;a href=&quot;https://github.com/kev-zheng/Texify&quot;&gt;repository&lt;/a&gt; for the source.&lt;/h5&gt;</content><author><name>Kevin Zheng</name></author><category term="project" /><summary type="html">A tool to help kick-start EECS 203 assignments.</summary></entry><entry><title type="html">Summer 2016: Japan 🇯🇵</title><link href="http://localhost:4000/content/photo/2016/08/20/summer-in-japan.html" rel="alternate" type="text/html" title="Summer 2016: Japan 🇯🇵" /><published>2016-08-20T00:00:00-04:00</published><updated>2016-08-20T00:00:00-04:00</updated><id>http://localhost:4000/content/photo/2016/08/20/summer-in-japan</id><content type="html" xml:base="http://localhost:4000/content/photo/2016/08/20/summer-in-japan.html"></content><author><name>Kevin Zheng</name></author><category term="photo" /><summary type="html"></summary></entry><entry><title type="html">Summer 2016: China 🇨🇳</title><link href="http://localhost:4000/content/photo/2016/07/25/summer-in-china.html" rel="alternate" type="text/html" title="Summer 2016: China 🇨🇳" /><published>2016-07-25T00:00:00-04:00</published><updated>2016-07-25T00:00:00-04:00</updated><id>http://localhost:4000/content/photo/2016/07/25/summer-in-china</id><content type="html" xml:base="http://localhost:4000/content/photo/2016/07/25/summer-in-china.html"></content><author><name>Kevin Zheng</name></author><category term="photo" /><summary type="html"></summary></entry><entry><title type="html">Winter Break 2015: Australia 🇦🇺 &amp;amp; New Zealand 🇳🇿</title><link href="http://localhost:4000/content/photo/2016/01/26/winter-in-australia.html" rel="alternate" type="text/html" title="Winter Break 2015: Australia 🇦🇺 &amp; New Zealand 🇳🇿" /><published>2016-01-26T00:00:00-05:00</published><updated>2016-01-26T00:00:00-05:00</updated><id>http://localhost:4000/content/photo/2016/01/26/winter-in-australia</id><content type="html" xml:base="http://localhost:4000/content/photo/2016/01/26/winter-in-australia.html"></content><author><name>Kevin Zheng</name></author><category term="photo" /><summary type="html"></summary></entry></feed>
+&lt;h5 id=&quot;thanks-for-reading-check-out-the-repository-for-the-source&quot;&gt;Thanks for reading! Check out the &lt;a href=&quot;https://github.com/kev-zheng/Texify&quot;&gt;repository&lt;/a&gt; for the source.&lt;/h5&gt;</content><author><name>Kevin Zheng</name></author><category term="project" /><summary type="html">A tool to help kick-start EECS 203 assignments.</summary></entry><entry><title type="html">SHEI Magazine</title><link href="http://localhost:4000/content/photo/2017/02/08/shei.html" rel="alternate" type="text/html" title="SHEI Magazine" /><published>2017-02-08T00:00:00-05:00</published><updated>2017-02-08T00:00:00-05:00</updated><id>http://localhost:4000/content/photo/2017/02/08/shei</id><content type="html" xml:base="http://localhost:4000/content/photo/2017/02/08/shei.html"></content><author><name>Kevin Zheng</name></author><category term="photo" /><summary type="html"></summary></entry><entry><title type="html">Summer 2016: Japan 🇯🇵</title><link href="http://localhost:4000/content/photo/2016/08/20/summer-in-japan.html" rel="alternate" type="text/html" title="Summer 2016: Japan 🇯🇵" /><published>2016-08-20T00:00:00-04:00</published><updated>2016-08-20T00:00:00-04:00</updated><id>http://localhost:4000/content/photo/2016/08/20/summer-in-japan</id><content type="html" xml:base="http://localhost:4000/content/photo/2016/08/20/summer-in-japan.html"></content><author><name>Kevin Zheng</name></author><category term="photo" /><summary type="html"></summary></entry><entry><title type="html">Summer 2016: China 🇨🇳</title><link href="http://localhost:4000/content/photo/2016/07/25/summer-in-china.html" rel="alternate" type="text/html" title="Summer 2016: China 🇨🇳" /><published>2016-07-25T00:00:00-04:00</published><updated>2016-07-25T00:00:00-04:00</updated><id>http://localhost:4000/content/photo/2016/07/25/summer-in-china</id><content type="html" xml:base="http://localhost:4000/content/photo/2016/07/25/summer-in-china.html"></content><author><name>Kevin Zheng</name></author><category term="photo" /><summary type="html"></summary></entry><entry><title type="html">Winter Break 2015: Australia 🇦🇺 &amp;amp; New Zealand 🇳🇿</title><link href="http://localhost:4000/content/photo/2016/01/26/winter-in-australia.html" rel="alternate" type="text/html" title="Winter Break 2015: Australia 🇦🇺 &amp; New Zealand 🇳🇿" /><published>2016-01-26T00:00:00-05:00</published><updated>2016-01-26T00:00:00-05:00</updated><id>http://localhost:4000/content/photo/2016/01/26/winter-in-australia</id><content type="html" xml:base="http://localhost:4000/content/photo/2016/01/26/winter-in-australia.html"></content><author><name>Kevin Zheng</name></author><category term="photo" /><summary type="html"></summary></entry></feed>
