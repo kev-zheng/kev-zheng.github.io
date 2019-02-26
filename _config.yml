@@ -52,10 +52,12 @@ lens-mapping:
   iPhone 6s back camera 4.15mm f/2.2: ""
   EF70-200mm f/4L USM: Canon 70-200mm f/4L USM
   EF50mm f/1.8 STM: Canon 50mm f/1.8
+  E 28-75mm F2.8-2.8: Tamron 28-75mm f/2.8
 
 camera-mapping:
   Canon EOS 7D Mark II: Canon 7D Mk II
   DMC-LX100: Panasonic Lumix LX-100
+  ILCE-7M2: Sony a7ii
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
