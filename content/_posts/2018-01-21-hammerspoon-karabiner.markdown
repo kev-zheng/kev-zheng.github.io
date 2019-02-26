@@ -7,6 +7,8 @@ title-img: hammerspoon.png
 description: Hammerspoon and Karabiner-Elements are all you need for a frictionless OSX experience
 ---
 
+I use two tools to massively boost my productivity while working on OSX. This article describes my configuration and how you can customize it to your own needs.
+
 [**Hammerspoon**](http://www.hammerspoon.org/) is an incredibly powerful wrapper around OSX, allowing you to easily interact with the OS via scripting, such as trigger notifications, move and resize windows, open applications, etc.
 
 [**Karabiner\-Elements**](https://github.com/tekezo/Karabiner-Elements) is a keyboard customization tool. I use this to remap keys to make it simple to trigger my Hammerspoon scripts from the keyboard.
@@ -33,7 +35,7 @@ Window positioning module [borrowed](https://gist.github.com/teknofire/a311390d0
 
 `hyper + down` resizes window to bottom side of screen.
 
-Repeated presses of above keys will cycle window to take up half, quarter, and 2/3 of screen.
+Repeated presses of the above will cycle half, quarter, and 2/3 of screen.
 
 `hyper + enter` resizes window to entire screen
 

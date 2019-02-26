@@ -1,17 +1,50 @@
 .profile-column {
   float:left;
   padding-top: 40px;
-  width: 25%;
+  width: 30%;
+}
+
+.profile-picture {
+  margin-left: auto;
+  margin-right: auto;
+  /* margin: 2.5rem auto 0; */
+  border-radius: 50%;
+}
+
+.profile-spacer {
+  margin-right: 5%;
+  max-width: 200px;
+}
+
+.profile-container {
+  width:75%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .content-column {
   float:left;
   padding-left: 5%;
-  width: 70%;
+  width: 65%;
+}
+
+.bio-nav {
+  text-align: center;
+}
+
+.bio-nav a {
+  display: inline-block;
+  color:black;
 }
 
 .description a {
   color: #445e70;
+}
+
+.description p {
+  line-height:22px;
+  margin-bottom:15px;
+  font-size: 1.4rem;
 }
 
 .homepage {
@@ -39,16 +72,7 @@ img {
   color: 	#36454f;
 }
 
-.profile-picture {
-    width: 100%;
-    margin: 2.5rem auto 0;
-    border-radius: 50%;
-}
 
-.profile-spacer {
-    margin-right: 5%;
-    max-width: 200px;
-}
 
 .bio {
     margin: 25px 0 0 25px;
@@ -123,7 +147,8 @@ img {
   }
 
   .photo-container {
-    width: 60%;
+    width: 100%;
+    /* width:800px; */
   }
 
   .photo-container .photo-overlay {
@@ -136,7 +161,7 @@ img {
     bottom: 0; /* At the bottom. Use top:0 to append it to the top */
     background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
     color: lightgrey; /* Grey text */
-    width: 60%; /* Full width */
+    width: 100%; /* Full width */
     margin-bottom: 5px;
     font-size: 12px;
   }
@@ -149,6 +174,7 @@ img {
   }
   
   .photo-caption {
+    margin-left: 50px;
     max-width: 35%;
     word-wrap: break-word;
     font-size: 1.5em;
@@ -180,6 +206,7 @@ img {
   }
 
   .photo-post {
+    width:700px;
     margin-top: 100px;
   }
 
@@ -211,4 +238,63 @@ img {
 
   .custom-select select::-ms-expand {
     display: none;
+  }
+
+  .wrap-collapsible input[type='checkbox'] {
+    display:none;
+  }
+
+  .wrap-collapsible .lbl-toggle {
+    display: block;
+  
+    font-weight: lighter;
+    font-family: 'PT Serif';
+    font-size: 1.8rem;
+    text-align: center;
+  
+    padding: 1rem;
+  
+    color: black;
+    background: whitesmoke;
+  
+    cursor: pointer;
+  
+    border-radius: 7px;
+    transition: all 0.1s ease-out;
+  }
+  
+  .wrap-collapsible .lbl-toggle:hover {
+    color: grey;
+  }
+
+  .wrap-collapsible .collapsible-content {
+    max-height: 0px;
+    overflow: hidden;
+  
+    transition: max-height 1s ease-in-out;
+  }
+
+  .wrap-collapsible .toggle:checked + .lbl-toggle + .collapsible-content {
+    max-height: 700px;
+  }
+
+  .wrap-collapsible .toggle:checked + .lbl-toggle  {
+    opacity:0;
+    display:none;
+    max-height: 0;
+  }
+
+  .lbl-toggle::before {
+    content: ' ';
+    display: inline-block;
+  
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-left: 5px solid currentColor;
+  
+    vertical-align: middle;
+    margin-right: .7rem;
+    transform: translateY(-2px);
+  
+    transition: transform .2s ease-out;
   }

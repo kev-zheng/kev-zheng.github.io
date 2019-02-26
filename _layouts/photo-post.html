@@ -10,6 +10,8 @@ layout: default
     
     <h5>{{ page.description | escape }}</h5>
         
+    {{ content }} 
+    
     {% assign counter = 0 %}
 
     {% for image in site.static_files %}
@@ -44,11 +46,11 @@ layout: default
                 </div>
             </div>
 
-            {% if page.caption and page.caption[image.name] %}
+            <!-- {% if page.caption and page.caption[image.name] %}
                 <span class="photo-caption desktop" >{{ page.caption[image.name] }}</span>
             {% elsif page.caption and page.caption[counter] %}
                 <span class="photo-caption desktop" >{{ page.caption[counter] }}</span>
-            {% endif %}
+            {% endif %} -->
         </div>
         
         {% endif %}

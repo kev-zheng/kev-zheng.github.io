@@ -1,6 +1,6 @@
 ---
 layout: photo-post
-title: "Summer 2016: Japan 🇯🇵"
+title: "japan 🇯🇵"
 date:   2016-08-20
 category: photo
 folder: japan-2016

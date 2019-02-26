@@ -1,6 +1,6 @@
 ---
 layout: photo-post
-title: "Summer 2016: China 🇨🇳"
+title: "china 🇨🇳"
 date:   2016-07-25
 category: photo
 folder: china-2016
@@ -31,5 +31,5 @@ caption:
 
   16: Taking advantage of the high-speed capabilities of the 7D to capture this
 
-description: Photos from a trip to Yunnan Province, China with the Zhang family
+description: Photos from a Summer 2016 Vacation in China
 ---
