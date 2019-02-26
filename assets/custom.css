@@ -81,8 +81,8 @@ img {
     font-size: 1em;
 }
 
-.bio .description {
-    padding-top: 25px;
+.description {
+    width: 90%;
 }
 
 .grid {
