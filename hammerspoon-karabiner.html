@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en"><head>    
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <link rel="stylesheet" href="/assets/main.css"> -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <link rel="stylesheet" href="/assets/skeleton.css">
+    <link rel="stylesheet" href="/assets/custom.css">
+    <link rel="stylesheet" href="/assets/syntax.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <!-- <embed src="https://kev-zheng.github.io/resume.pdf" type="application/pdf" /> -->
+
+    <title>Kevin Zheng</title>
+
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Kevin Zheng" /><!--  Chirico: Add Custom Headers    -->
+    
+    <!--  Chirico: Done custom          -->
+</head>
+      <body>
+
+    <main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <div class="post">
+
+    <a class="no-link-decoration" href="/">↩</a>
+
+    <h2>A More Productive OSX 🍏</h1>
+
+    <h5>Hammerspoon and Karabiner-Elements are all you need for a frictionless OSX experience</h5>
+        
+    <p>I use two tools to massively boost my productivity while working on OSX. This article describes my configuration and how you can customize it to your own needs.</p>
+
+<p><a href="http://www.hammerspoon.org/"><strong>Hammerspoon</strong></a> is an incredibly powerful wrapper around OSX, allowing you to easily interact with the OS via scripting, such as trigger notifications, move and resize windows, open applications, etc.</p>
+
+<p><a href="https://github.com/tekezo/Karabiner-Elements"><strong>Karabiner-Elements</strong></a> is a keyboard customization tool. I use this to remap keys to make it simple to trigger my Hammerspoon scripts from the keyboard.</p>
+
+<p><strong>Note: gifs in this article were compressed for display on the site. Actual usage is much smoother and free of gif artifacts. Try it out for yourself!</strong></p>
+
+<h4 id="features">Features</h4>
+
+<ul>
+  <li><a href="#position">position</a> - Instantly resize windows into halves of your screen</li>
+  <li><a href="#focus">focus</a> - Shift focus (i.e. click) onto an app, or launch if not open</li>
+  <li><a href="#monitor">monitor</a> - Move windows between external monitors or <a href="https://support.apple.com/kb/ph25574?locale=en_US">spaces</a></li>
+  <li><a href="#gcal">gcal</a> - Menu bar to see all of your upcoming calendar events</li>
+  <li><a href="#timer">timer</a> - Pomodoro timer to keep you focused</li>
+</ul>
+
+<h1 id="position">position</h1>
+
+<p>Window positioning module <a href="https://gist.github.com/teknofire/a311390d0427c09e7be6044d09c8d372">borrowed</a> from Miro Mannino.</p>
+
+<p><code class="highlighter-rouge">hyper + right</code> resizes window to right side of screen.</p>
+
+<p><code class="highlighter-rouge">hyper + left</code> resizes window to left side of screen.</p>
+
+<p><code class="highlighter-rouge">hyper + up</code> resizes window to upper side of screen.</p>
+
+<p><code class="highlighter-rouge">hyper + down</code> resizes window to bottom side of screen.</p>
+
+<p>Repeated presses of the above will cycle half, quarter, and 2/3 of screen.</p>
+
+<p><code class="highlighter-rouge">hyper + enter</code> resizes window to entire screen</p>
+
+<p>Repeated presses of <code class="highlighter-rouge">hyper + enter</code> will cycle through resizing similarly.</p>
+
+<p><img src="/gifs/position.gif" alt="Position gif" /></p>
+
+<h1 id="focus">focus</h1>
+
+<p>File containing hotkey bindings. Each segment binds a hotkey to a useful application - such as <code class="highlighter-rouge">hyper + c</code> to launch <code class="highlighter-rouge">Google Chrome</code></p>
+
+<p><img src="/gifs/focus.gif" alt="Focus gif" /></p>
+
+<h1 id="monitor">monitor</h1>
+
+<p>Keybindings used to interact with an external monitor, or between spaces within a monitor. Very useful for moving applications back and forth.</p>
+
+<p><code class="highlighter-rouge">hyper + shift + right</code> cycles the current application to monitor on the right</p>
+
+<p><code class="highlighter-rouge">hyper + shift + left</code> cycles the current application to monitor on the left</p>
+
+<p><code class="highlighter-rouge">hyper + shift + h</code> moves the current application to a space on the left</p>
+
+<p><code class="highlighter-rouge">hyper + shift + l</code> moves the current application to a space on the right</p>
+
+<p><img src="/gifs/spaces.gif" alt="Spaces gif" /></p>
+
+<h1 id="gcal">gcal</h1>
+
+<p>Constructs a menubar. Uses the Google Calendar API to fetch events, colors, timing, etc. to a json file, which are then loaded into the menubar on each refresh.</p>
+
+<p><img src="/photos/hammerspoon-karabiner/calendar.png" alt="Calendar gif" /></p>
+
+<h1 id="timer">timer</h1>
+
+<p>A simple pomodoro timer! Sets a default time for 25 minutes, with option to pause and cancel.</p>
+
+<p><img src="/gifs/timer.gif" alt="Timer gif" /></p>
+
+<h1 id="how-to-use">How to use</h1>
+
+<h2 id="karabiner-elements">Karabiner-Elements</h2>
+
+<p>Karabiner-Elements is a relatively new tool made when OSX Sierra came out. As a result, installing it is a bit of a hassle as it’s still under continuous development. Follow the instructions in the <code class="highlighter-rouge">How to Build</code> section in the link <a href="https://github.com/tekezo/Karabiner-Elements">above</a>. It requires installing C++ Boost Libraries, XCode Build tools beforehand but should compile into a standalone application, which doesn’t need to be compiled every time you update.</p>
+
+<p>edit: <a href="https://pqrs.org/osx/karabiner/">it can now be downloaded directly as a package!</a></p>
+
+<p>Use Karabiner to make a <code class="highlighter-rouge">hyper</code> key. I rebinding my <code class="highlighter-rouge">caps lock</code> key (which I never use) into <code class="highlighter-rouge">ctrl+alt+cmd</code>. Do this by editing your <code class="highlighter-rouge">karabiner.json</code> file located in <code class="highlighter-rouge">~/.config/karabiner</code>. <a href="https://github.com/kev-zheng/hammerspoon/blob/master/karabiner.json">See my file here that you can copy/paste</a></p>
+
+<h2 id="hammerspoon">Hammerspoon</h2>
+
+<p>Download the <a href="https://github.com/Hammerspoon/hammerspoon">latest release</a>. I recommend familiarizing with it through the getting started guide <a href="http://www.hammerspoon.org/go">here</a>.</p>
+
+<p>Hammerspoon interacts with the operating system using the Lua language, which is an easy to learn scripting language. Whenever hammerspoon is loaded or refreshed, your <code class="highlighter-rouge">~/.hammerspoon/init.lua</code> file is processed. You can use the console as a REPL for lua code.</p>
+
+<p>To start, I defined the hyperkey</p>
+
+<p><code class="highlighter-rouge">init.lua</code></p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>hyper = {"ctrl", "alt", "cmd"}
+</code></pre></div></div>
+
+<p>and followed the <a href="http://www.hammerspoon.org/docs/hs.application.html#launchOrFocus">docs</a> to build the focusing hotkey</p>
+
+<p><code class="highlighter-rouge">focus.lua</code></p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+    hs.hotkey.bind(hyper, "C", function ()
+      hs.application.launchOrFocus('Google Chrome')
+    end)
+    
+    hs.hotkey.bind(hyper, 'E', function ()
+      hs.application.launchOrFocus('Visual Studio Code')
+    end)
+    
+</code></pre></div></div>
+
+<p>The file <code class="highlighter-rouge">focus.lua</code> is separate from <code class="highlighter-rouge">init.lua</code>. To activate this code, all I need to do is include <code class="highlighter-rouge">focus.lua</code></p>
+
+<p><code class="highlighter-rouge">init.lua</code></p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>require('focus')
+</code></pre></div></div>
+
+<p>Hammerspoon has a great community that have built a ton of other <a href="https://github.com/Hammerspoon/Spoons">spoons</a> and <a href="https://github.com/Hammerspoon/hammerspoon/wiki/Sample-Configurations">sample configurations</a>. For instance, I borrowed the fantastic <a href="https://github.com/miromannino/miro-windows-manager">resizing hotkey</a> functionality from another user.</p>
+
+<h5 id="thanks-for-reading-check-out-the-repository-for-my-configuration">Thanks for reading! Check out the <a href="https://github.com/kev-zheng/hammerspoon/">repository</a> for my configuration.</h5>
+ 
+                
+    <a class="no-link-decoration" href="/">↩</a>
+
+</div>
+
+      </div>
+    </main>
+
+  </body>
+
+</html>
