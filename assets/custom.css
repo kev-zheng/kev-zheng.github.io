@@ -28,6 +28,15 @@
   width: 65%;
 }
 
+.bio-nav {
+  text-align: center;
+}
+
+.bio-nav a {
+  display: inline-block;
+  color:black;
+}
+
 .description a {
   color: #445e70;
 }
