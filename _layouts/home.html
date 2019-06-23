@@ -19,15 +19,23 @@ photo-icon: fas fa-camera
 
   <div class="content-column">
 
+      <!-- <div onclick="DropDown()" class="wrapper-dropdown-2">Sign in with
+          <ul class="dropdown-custom">
+            <li><a href="#">Twitter</a></li>
+            <li><a href="#">Github</a></li>
+            <li><a href="#">Facebook</a></li>
+          </ul>
+      </div> -->
+      
     <div class="grid-header row">
-          <h4>see&nbsp</h4>
-          <select class="custom-select filter-field">
-            <option class="select-posts" value="">posts</option>
-            <option class="select-photos" value="photo">pictures</option>
-            <option class="select-projects" value="project">projects</option>
-          </select>
-      </div>
-  
+      <h4>see&nbsp</h4>
+      <select class="custom-select filter-field">
+        <option class="select-posts" value="">posts</option>
+        <option class="select-photos" value="photo">pictures</option>
+        <option class="select-projects" value="project">projects</option>
+      </select>
+    </div>
+
       <div class="row">
         <div class="grid">
             {%- if site.posts.size > 0 -%}
@@ -58,4 +66,21 @@ photo-icon: fas fa-camera
     
     });
   }
+
+  function DropDown(el) {
+      this.dd = el;
+      this.initEvents();
+  }
+
+  DropDown.prototype = {
+    initEvents : function() {
+        var obj = this;
+
+        obj.dd.on('click', function(event){
+            $(this).toggleClass('active');
+            event.stopPropagation();
+        }); 
+    }
+  }
+
 </script>
