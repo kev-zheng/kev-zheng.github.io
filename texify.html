@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en"><head>    
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <link rel="stylesheet" href="/assets/main.css"> -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <link rel="stylesheet" href="/assets/skeleton.css">
+    <link rel="stylesheet" href="/assets/custom.css">
+    <link rel="stylesheet" href="/assets/syntax.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <!-- <embed src="https://kev-zheng.github.io/resume.pdf" type="application/pdf" /> -->
+
+    <title>Kevin Zheng</title>
+
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Kevin Zheng" /><!--  Chirico: Add Custom Headers    -->
+    
+    <!--  Chirico: Done custom          -->
+</head>
+      <body>
+
+    <main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <div class="post">
+
+    <a class="no-link-decoration" href="/">↩</a>
+
+    <h2>Texify:<br />
+Hands-Free EECS 203 Templates 📓<br />
+</h1>
+
+    <h5></h5>
+        
+    <h4 id="a-tool-to-help-kick-start-eecs-203-assignments">A tool to help kick-start EECS 203 assignments.</h4>
+
+<p><em>or: documenting the process of developing of one of my very first projects</em></p>
+
+<p>The winter of my freshman year, I took Discrete Mathematics (EECS 203 at Michigan). From a professor’s recommendation, I also started to learn <a href="https://www.latex-project.org/">LaTeX</a>.</p>
+
+<p>If you don’t know, LaTeX is a complicated but powerful document markup language. It’s used as the standard in countless academic papers. Also in tedious homework assignments.</p>
+
+<p>Below, you can see an example of a typical EECS 203 assignment.</p>
+
+<p><img src="/photos/homework_example_EECS203.png" alt="image" /></p>
+
+<p>Learning to use LaTeX was <em>hard</em> - even making the boilerplate takes a decent chunk of time. I wanted to find a way to minimize the busy-work so that I can spend more time on the assignment.</p>
+
+<p>Here’s an example of bare-bones LaTeX boilerplate</p>
+
+<div class="language-latex highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">\documentclass</span><span class="p">{</span>article<span class="p">}</span>
+<span class="k">\usepackage</span><span class="p">{</span>graphicx<span class="p">}</span>
+
+<span class="nt">\begin{document}</span>
+
+<span class="k">\title</span><span class="p">{</span>Introduction to <span class="k">\LaTeX</span><span class="p">{}}</span>
+<span class="k">\author</span><span class="p">{</span>Author's Name<span class="p">}</span>
+
+<span class="k">\maketitle</span>
+
+<span class="nt">\begin{abstract}</span>
+The abstract text goes here.
+<span class="nt">\end{abstract}</span>
+
+<span class="k">\section</span><span class="p">{</span>Introduction<span class="p">}</span>
+Here is the text of your introduction.
+
+<span class="nt">\begin{equation}</span>
+    <span class="k">\label</span><span class="p">{</span>simple<span class="p">_</span>equation<span class="p">}</span>
+    <span class="k">\alpha</span> = <span class="k">\sqrt</span><span class="p">{</span> <span class="k">\beta</span> <span class="p">}</span>
+<span class="nt">\end{equation}</span>
+
+<span class="k">\subsection</span><span class="p">{</span>Subsection Heading Here<span class="p">}</span>
+Write your subsection text here.
+
+<span class="nt">\begin{figure}</span>
+    <span class="k">\centering</span>
+    <span class="k">\includegraphics</span><span class="na">[width=3.0in]</span><span class="p">{</span>myfigure<span class="p">}</span>
+    <span class="k">\caption</span><span class="p">{</span>Simulation Results<span class="p">}</span>
+    <span class="k">\label</span><span class="p">{</span>simulationfigure<span class="p">}</span>
+<span class="nt">\end{figure}</span>
+
+<span class="k">\section</span><span class="p">{</span>Conclusion<span class="p">}</span>
+Write your conclusion here.
+
+<span class="nt">\end{document}</span>
+</code></pre></div></div>
+
+<p>Which looks like this:</p>
+
+<p><img src="/photos/latex-example.png" alt="image" /></p>
+
+<p>When considering the assignment, the main challenge was to extract the problem features from the .pdf</p>
+
+<p><img src="/photos/homework_example_marked_EECS203.png" alt="image" /></p>
+
+<p>I found a tool online called <a href="&quot;https://tabula.technology/&quot;">tabula</a> that can parse data tables in pdf files, as well as a <a href="&quot;https://github.com/chezou/tabula-py&quot;">python wrapper</a> to convert the table into Pandas. Perfect.</p>
+
+<p>LaTeX, like most coding languages, is picky. There are two main “environments” - math and text. There are some math symbols that can only be used in math mode. For example, <code class="highlighter-rouge">$ do \sum math </code></p>
+
+<p>Since this is only for extraction and display purposes, most symbols can be simply removed:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <span class="s">r"""."'^“”/√_"""</span><span class="p">:</span>
+    <span class="n">df</span><span class="p">[</span><span class="s">'Problem'</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s">'Problem'</span><span class="p">]</span><span class="o">.</span><span class="nb">str</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="n">c</span><span class="p">,</span> <span class="s">''</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p>Regular expressions and splitting can be used to parse out the pandas rows</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># Extract numbers and problem</span>
+<span class="n">df</span><span class="p">[</span><span class="s">'Number'</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s">'Problem'</span><span class="p">]</span><span class="o">.</span><span class="nb">str</span><span class="o">.</span><span class="n">extract</span><span class="p">(</span><span class="s">'(^</span><span class="err">\</span><span class="s">d+</span><span class="err">\</span><span class="s">.?</span><span class="err">\</span><span class="s">d*)'</span><span class="p">,</span> <span class="n">expand</span><span class="o">=</span><span class="bp">False</span><span class="p">)</span>
+<span class="n">df</span><span class="p">[</span><span class="s">'Parts'</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s">'Problem'</span><span class="p">]</span><span class="o">.</span><span class="nb">str</span><span class="o">.</span><span class="n">extract</span><span class="p">(</span><span class="s">'^</span><span class="err">\</span><span class="s">d+</span><span class="err">\</span><span class="s">.?</span><span class="err">\</span><span class="s">d*</span><span class="err">\</span><span class="s">s*([a-z,]+)'</span><span class="p">,</span> <span class="n">expand</span><span class="o">=</span><span class="bp">False</span><span class="p">)</span>
+
+<span class="c"># Split 'Parts' by comma into a list</span>
+<span class="n">df</span><span class="p">[</span><span class="s">'Parts'</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s">'Parts'</span><span class="p">]</span><span class="o">.</span><span class="nb">str</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s">","</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p>Now, I had all of my material. I just needed a way to write it. I made my own hacky syntax for templating: if the line contained <code class="highlighter-rouge">!split</code>, then write the problem data.</p>
+
+<p>Note: more advanced templating using engines, which I have not been aware of, such as <a href="&quot;http://jinja.pocoo.org/2/&quot;">Jinja2</a> or <a href="&quot;https://shopify.github.io/liquid&quot;">Liquid</a> could have been used.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">write_tex</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="n">template_path</span><span class="p">,</span> <span class="n">output_dir</span><span class="p">,</span> <span class="n">output_file</span><span class="p">):</span>
+    <span class="s">"""Write new output file with dataframe and template.txt"""</span>
+    <span class="n">output</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">output_dir</span><span class="p">,</span> <span class="n">output_file</span><span class="p">),</span> <span class="s">'w'</span><span class="p">)</span>
+
+    <span class="c"># Write output file</span>
+    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">template_path</span><span class="p">,</span> <span class="s">'r'</span><span class="p">)</span> <span class="k">as</span> <span class="n">template</span><span class="p">:</span>
+        <span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">template</span><span class="p">:</span>
+            <span class="k">if</span> <span class="n">line</span> <span class="o">==</span> <span class="s">"!split</span><span class="se">\n</span><span class="s">"</span><span class="p">:</span>
+                <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">df</span><span class="o">.</span><span class="n">index</span><span class="p">:</span>
+                    <span class="n">output</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">make_problem</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s">"Points"</span><span class="p">][</span><span class="n">i</span><span class="p">],</span>
+                                              <span class="n">df</span><span class="p">[</span><span class="s">"Section"</span><span class="p">][</span><span class="n">i</span><span class="p">],</span>
+                                              <span class="n">df</span><span class="p">[</span><span class="s">"Number"</span><span class="p">][</span><span class="n">i</span><span class="p">],</span>
+                                              <span class="n">df</span><span class="p">[</span><span class="s">"Problem"</span><span class="p">][</span><span class="n">i</span><span class="p">],</span>
+                                              <span class="n">df</span><span class="p">[</span><span class="s">"Parts"</span><span class="p">][</span><span class="n">i</span><span class="p">]))</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="n">output</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">line</span><span class="p">)</span>
+    <span class="n">output</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+</code></pre></div></div>
+
+<p>Putting it all together with attractive boilerplate LaTeX, the program spits out</p>
+
+<div class="language-latex highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">\begin{document}</span>
+
+<span class="k">\title</span><span class="p">{</span> EECS 203: Discrete Mathematics <span class="k">\\</span>
+        Homework [Homework Number] (Winter 2017)<span class="p">}</span>
+<span class="k">\date</span><span class="p">{</span>Due: Now<span class="p">}</span>
+<span class="k">\author</span><span class="p">{</span>[Name]<span class="p">}</span>
+
+<span class="k">\maketitle</span>
+
+<span class="nt">\begin{questions}</span>
+
+<span class="c">%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%</span>
+<span class="c">%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%</span>
+<span class="k">\question</span><span class="na">[1.0]</span> Section 9.2 Problem 12 <span class="k">\\</span>
+“What do you obtain when you apply...”
+<span class="nt">\begin{solution}</span><span class="k">\\</span>
+
+
+
+
+<span class="nt">\end{solution}</span>
+<span class="c">%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%</span>
+<span class="c">%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%</span>
+
+.
+.
+. Questions here
+.
+.
+
+<span class="nt">\end{questions}</span>
+
+<span class="nt">\end{document}</span>
+
+
+</code></pre></div></div>
+
+<p>which will look like this</p>
+
+<p><img src="/photos/texify-output.png" alt="image" /></p>
+
+<h5 id="thanks-for-reading-check-out-the-repository-for-the-source">Thanks for reading! Check out the <a href="https://github.com/kev-zheng/Texify">repository</a> for the source.</h5>
+ 
+                
+    <a class="no-link-decoration" href="/">↩</a>
+
+</div>
+
+      </div>
+    </main>
+
+  </body>
+
+</html>
