@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Your awesome title | Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</title>
+<meta name="generator" content="Jekyll v3.10.0" />
+<meta property="og:title" content="Your awesome title" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description." />
+<meta property="og:description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description." />
+<link rel="canonical" href="http://localhost:4000/" />
+<meta property="og:url" content="http://localhost:4000/" />
+<meta property="og:site_name" content="Your awesome title" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Your awesome title" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebSite","description":"Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.","headline":"Your awesome title","name":"Your awesome title","url":"http://localhost:4000/"}</script>
+<!-- End Jekyll SEO tag -->
+<link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Your awesome title" /><link rel="stylesheet" href="/assets/skeleton.css" type="text/css">
+<link rel="stylesheet" href="/assets/custom.css" type="text/css">
+<link rel="stylesheet" href="/assets/syntax.css" type="text/css">
+<link rel="icon" type="image/png" sizes="32x32" href=
+"/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href=
+"/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href=
+"/favicon-16x16.png">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/web-animations/2.3.1/web-animations.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
+<script src="https://unpkg.com/muuri@0.6.3/dist/muuri.min.js"></script>
+</head>
+<body><main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <div class="home homepage container">
+
+
+  
+
+  <div class="profile-column">
+      <div class="profile-container">
+          <img class="profile-picture" src="/assets/profile.jpg" alt="image"/>
+      </div>
+
+      <div class="bio-nav">
+        <a href="about">professional bio</a>
+      </div>
+  </div>
+
+  <div class="content-column"><div class="grid-header row">
+        <h4>see&nbsp</h4>
+        <select class="custom-select filter-field">
+          <option class="select-posts" value="">all</option>
+          <option class="select-travel" value="travel">travel</option>
+          <option class="select-tech" value="tech">tech</option>
+          <option class="select-photography" value="photography">photography</option>
+        </select>
+      </div>
+  
+      <div class="row">
+        <div class="grid"><div class="item row" data-category="photography">
+            <a class="post-meta no-link-decoration" href="/photography/2019/02/23/sf-cny.html">SF Chinese New Year Parade 2019</a>
+            <p class="post-meta">Feb 23, 2019</p>
+          </div><div class="item row" data-category="photography">
+            <a class="post-meta no-link-decoration" href="/photography/2017/02/08/shei.html">SHEI Magazine 2017</a>
+            <p class="post-meta">Feb 8, 2017</p>
+          </div><div class="item row" data-category="photography">
+            <a class="post-meta no-link-decoration" href="/photography/2016/08/20/japan.html">Japan 2016</a>
+            <p class="post-meta">Aug 20, 2016</p>
+          </div><div class="item row" data-category="photography">
+            <a class="post-meta no-link-decoration" href="/photography/2016/07/25/china-yunnan.html">Yunnan, China 2016</a>
+            <p class="post-meta">Jul 25, 2016</p>
+          </div><div class="item row" data-category="photography">
+            <a class="post-meta no-link-decoration" href="/photography/2016/01/26/aus-nz.html">Australia & New Zealand 2016</a>
+            <p class="post-meta">Jan 26, 2016</p>
+          </div></div>
+      </div></div>
+</div>
+
+<script type="text/javascript">
+  var grid = new Muuri('.grid', {dragEnabled: false, layout: {fillGaps: true}});
+
+  var filterField = document.querySelector('.filter-field');
+  filterField.addEventListener('change', filter);
+
+  function filter() {
+    grid.filter(function (item) {
+      var element = item.getElement();
+      var isFilterMatch = filterField.value == "" ? true : (element.getAttribute('data-category').includes(filterField.value))
+    
+      return isFilterMatch;
+    
+    });
+  }
+
+  function DropDown(el) {
+      this.dd = el;
+      this.initEvents();
+  }
+
+  DropDown.prototype = {
+    initEvents : function() {
+        var obj = this;
+
+        obj.dd.on('click', function(event){
+            $(this).toggleClass('active');
+            event.stopPropagation();
+        }); 
+    }
+  }
+
+</script>
+
+
+      </div>
+    </main></body>
+
+</html>
