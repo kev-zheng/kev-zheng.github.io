@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>A More Productive OSX 🍏 | Your awesome title</title>
+<meta name="generator" content="Jekyll v3.10.0" />
+<meta property="og:title" content="A More Productive OSX 🍏" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description." />
+<meta property="og:description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description." />
+<link rel="canonical" href="http://localhost:4000/tech/2018/01/21/osx.html" />
+<meta property="og:url" content="http://localhost:4000/tech/2018/01/21/osx.html" />
+<meta property="og:site_name" content="Your awesome title" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2018-01-21T00:00:00+09:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="A More Productive OSX 🍏" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2018-01-21T00:00:00+09:00","datePublished":"2018-01-21T00:00:00+09:00","description":"Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.","headline":"A More Productive OSX 🍏","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/tech/2018/01/21/osx.html"},"url":"http://localhost:4000/tech/2018/01/21/osx.html"}</script>
+<!-- End Jekyll SEO tag -->
+<link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Your awesome title" /><link rel="stylesheet" href="/assets/skeleton.css" type="text/css">
+<link rel="stylesheet" href="/assets/custom.css" type="text/css">
+<link rel="stylesheet" href="/assets/syntax.css" type="text/css">
+<link rel="icon" type="image/png" sizes="32x32" href=
+"/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href=
+"/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href=
+"/favicon-16x16.png">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/web-animations/2.3.1/web-animations.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
+<script src="https://unpkg.com/muuri@0.6.3/dist/muuri.min.js"></script>
+</head>
+<body><main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <a class="no-link-decoration" href="/">↩</a>
+
+  <header class="post-header">
+    <h2 class="post-title p-name" itemprop="name headline">A More Productive OSX 🍏</h2>
+    <p class="post-meta"><time class="dt-published" datetime="2018-01-21T00:00:00+09:00" itemprop="datePublished">
+        Jan 21, 2018
+      </time></p>
+  </header>
+
+  <br>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <p><br /></p>
+
+<h5 id="hammerspoon-and-karabiner-elements-are-all-you-need-for-a-frictionless-osx-experience">Hammerspoon and Karabiner-Elements are all you need for a frictionless OSX experience</h5>
+
+<p>I use two tools to massively boost my productivity while working on OSX. This article describes my configuration and how you can customize it to your own needs.</p>
+
+<p><a href="http://www.hammerspoon.org/">Hammerspoon</a> is an incredibly powerful wrapper around OSX, allowing you to easily interact with the OS via scripting, such as trigger notifications, move and resize windows, open applications, etc.</p>
+
+<p><a href="https://github.com/tekezo/Karabiner-Elements">Karabiner-Elements</a> is a keyboard customization tool. I use this to remap keys to make it simple to trigger my Hammerspoon scripts from the keyboard.</p>
+
+<h4 id="features">Features</h4>
+<ul>
+  <li>position - Instantly resize windows into halves of your screen</li>
+  <li>focus - Shift focus (i.e. click) onto an app, or launch if not open</li>
+  <li>monitor - Move windows between external monitors or spaces</li>
+  <li>gcal - Menu bar to see all of your upcoming calendar events</li>
+  <li>timer - Pomodoro timer to keep you focused</li>
+</ul>
+
+<h4 id="position">Position</h4>
+<p>Window positioning module borrowed from Miro Mannino.</p>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">hyper + right</code> resizes window to right side of screen.</li>
+  <li><code class="language-plaintext highlighter-rouge">hyper + left</code> resizes window to left side of screen.</li>
+  <li><code class="language-plaintext highlighter-rouge">hyper + up</code> resizes window to upper side of screen.</li>
+  <li><code class="language-plaintext highlighter-rouge">hyper + down</code> resizes window to bottom side of screen.</li>
+</ul>
+
+<p>Repeated presses of the above will cycle half, quarter, and 2/3 of screen.</p>
+
+<p>hyper + enter resizes window to entire screen</p>
+
+<p>Repeated presses of hyper + enter will cycle through resizing similarly.</p>
+
+<div class="photo-row">
+    <div class="photo-container">
+      <img src='/photos/2018-01-21-osx/position.gif'>
+    </div>
+</div>
+
+
+<h4 id="focus">Focus</h4>
+<p>File containing hotkey bindings. Each segment binds a hotkey to a useful application - such as <code class="language-plaintext highlighter-rouge">hyper + c</code> to launch Chrome</p>
+
+<div class="photo-row">
+    <div class="photo-container">
+      <img src='/photos/2018-01-21-osx/focus.gif'>
+    </div>
+</div>
+
+
+<h4 id="monitor">Monitor</h4>
+<p>Keybindings used to interact with an external monitor, or between spaces within a monitor. Very useful for moving applications back and forth.</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">hyper + shift + right</code> cycles the current application to monitor on the right</li>
+  <li><code class="language-plaintext highlighter-rouge">hyper + shift + left</code> cycles the current application to monitor on the left</li>
+  <li><code class="language-plaintext highlighter-rouge">hyper + shift + h</code> moves the current application to a space on the left</li>
+  <li><code class="language-plaintext highlighter-rouge">hyper + shift + l</code> moves the current application to a space on the right</li>
+</ul>
+
+<div class="photo-row">
+    <div class="photo-container">
+      <img src='/photos/2018-01-21-osx/spaces.gif'>
+    </div>
+</div>
+
+
+<h4 id="gcal">gcal</h4>
+<p>Constructs a menubar. Uses the Google Calendar API to fetch events, colors, timing, etc. to a json file, which are then loaded into the menubar on each refresh.</p>
+
+<div class="photo-row">
+    <div class="photo-container">
+      <img src='/photos/2018-01-21-osx/calendar.png'>
+    </div>
+</div>
+
+
+<h4 id="timer">timer</h4>
+<p>A simple pomodoro timer! Sets a default time for 25 minutes, with option to pause and cancel.</p>
+
+<div class="photo-row">
+    <div class="photo-container">
+      <img src='/photos/2018-01-21-osx/timer.gif'>
+    </div>
+</div>
+
+
+<h4 id="how-to-use">How to use</h4>
+<h5 id="karabiner-elements">Karabiner-Elements</h5>
+
+<p>Karabiner-Elements is a relatively new tool made when OSX Sierra came out. As a result, installing it is a bit of a hassle as it’s still under continuous development. Follow the instructions in the <code class="language-plaintext highlighter-rouge">How to Build</code> section in the link <a href="https://github.com/tekezo/Karabiner-Elements">above</a>. It requires installing C++ Boost Libraries, XCode Build tools beforehand but should compile into a standalone application, which doesn’t need to be compiled every time you update.</p>
+
+<p>edit: <a href="https://pqrs.org/osx/karabiner/">it can now be downloaded directly as a package!</a></p>
+
+<p>Use Karabiner to make a <code class="language-plaintext highlighter-rouge">hyper</code> key. I rebinding my caps lock key (which I never use) into <code class="language-plaintext highlighter-rouge">ctrl+alt+cmd</code>. Do this by editing your <code class="language-plaintext highlighter-rouge">karabiner.json</code> file located in <code class="language-plaintext highlighter-rouge">~/.config/karabiner</code>. <a href="https://github.com/kev-zheng/hammerspoon/blob/master/karabiner.json">See my file here that you can copy/paste</a></p>
+
+<h5 id="hammerspoon">Hammerspoon</h5>
+<p>Download the latest release. I recommend familiarizing with it through the getting started guide here.</p>
+
+<p>Hammerspoon interacts with the operating system using the Lua language, which is an easy to learn scripting language. Whenever hammerspoon is loaded or refreshed, your <code class="language-plaintext highlighter-rouge">~/.hammerspoon/init.lua</code> file is processed. You can use the console as a REPL for lua code.</p>
+
+<p>To start, I defined the hyperkey</p>
+
+<p><code class="language-plaintext highlighter-rouge">init.lua</code></p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>hyper = {"ctrl", "alt", "cmd"}
+
+</code></pre></div></div>
+
+<p>and followed the <a href="http://www.hammerspoon.org/docs/hs.application.html#launchOrFocus">docs</a> to build the focusing hotkey</p>
+
+<p><code class="language-plaintext highlighter-rouge">focus.lua</code></p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    hs.hotkey.bind(hyper, "C", function ()
+      hs.application.launchOrFocus('Google Chrome')
+    end)
+    
+    hs.hotkey.bind(hyper, 'E', function ()
+      hs.application.launchOrFocus('Visual Studio Code')
+    end)
+    
+</code></pre></div></div>
+
+<p>The file <code class="language-plaintext highlighter-rouge">focus.lua</code> is separate from <code class="language-plaintext highlighter-rouge">init.lua</code>. To activate this code, all I need to do is include <code class="language-plaintext highlighter-rouge">focus.lua</code></p>
+
+<p><code class="language-plaintext highlighter-rouge">init.lua</code></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>require('focus')
+</code></pre></div></div>
+
+<p>Hammerspoon has a great community that have built a ton of other <a href="https://github.com/Hammerspoon/Spoons">spoons</a> and <a href="https://github.com/Hammerspoon/hammerspoon/wiki/Sample-Configurations">sample configurations</a>. For instance, I borrowed the fantastic <a href="https://github.com/miromannino/miro-windows-manager">resizing hotkey</a> functionality from another user.</p>
+
+
+  </div><a class="u-url" href="/tech/2018/01/21/osx.html" hidden></a>
+
+  <a class="no-link-decoration" href="/">↩</a>
+
+</article>
+
+      </div>
+    </main></body>
+
+
+
+</html>
