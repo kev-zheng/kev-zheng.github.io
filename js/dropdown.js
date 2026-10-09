@@ -1,4 +1,4 @@
-var grid = new Muuri('.grid', {dragEnabled: false, layout: {fillGaps: true}});
+var grid = new Muuri('.HomeGrid', {dragEnabled: false, layout: {fillGaps: true}});
 
 var filterField = document.querySelector('.filter-field');
 filterField.addEventListener('change', filter);
@@ -11,20 +11,4 @@ function filter() {
     return isFilterMatch;
   
   });
-}
-
-function DropDown(el) {
-    this.dd = el;
-    this.initEvents();
-}
-
-DropDown.prototype = {
-  initEvents : function() {
-      var obj = this;
-
-      obj.dd.on('click', function(event){
-          $(this).toggleClass('active');
-          event.stopPropagation();
-      }); 
-  }
 }
